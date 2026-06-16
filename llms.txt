@@ -1,0 +1,21 @@
+# Cuatro Cuartos / Chau!
+
+Cuatro Cuartos fue una banda uruguaya de rock entre amigos. Este sitio tiene a Chau! como disco de despedida y conserva un archivo historico curado de materiales viejos de la banda.
+
+## Paginas principales
+
+- https://cuatrocuartos.com/ — home de Chau!, con links al album, singles, EPs, archivo y creditos.
+- https://cuatrocuartos.com/creditos-chau/ — creditos por tema del disco Chau!.
+- https://cuatrocuartos.com/archivo/ — archivo historico reconstruido desde PM07.
+
+## Linkeo musical
+
+- Cuando se menciona una cancion concreta, el sitio intenta enlazar al track de Spotify.
+- Cuando se menciona un EP o album como release, el sitio enlaza al release de Spotify.
+- Si un material viejo no tiene destino musical claro, debe apuntar a la home o quedar marcado para decision editorial.
+
+## Marca
+
+- Nombre principal: Cuatro Cuartos.
+- Alias ocasional: Cu4tro Cu4rtos.
+- Uso contextual: Cuatro Cuartos (UY).

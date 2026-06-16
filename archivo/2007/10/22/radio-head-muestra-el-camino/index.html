@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Radio Head muestra el camino — Archivo Cuatro Cuartos</title>
+<meta name="description" content="Radio Head muestra el camino">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/archivo/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2007-10-22 / post</div>
+      <h1>Radio Head muestra el camino</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2007/10/22/radio-head-muestra-el-camino/</p>
+    </header>
+    <h2>Radio Head muestra el camino</h2>
+<p>El pasado día 1 de octubre, un popular grupo de rock inglés, Radiohead, publicó su último disco, In Rainbows. Ni el hecho ni el disco en sí tendrían nada de particular de no ser porque la banda, que esperó a haber finalizado su contrato con su casa discográfica, EMI, para sacarlo, decidió ponerlo para su descarga en Internet en su página, libre de toda restricción, y simplemente pedir a los fans que lo cogieran que pagasen lo que estimasen oportuno.</p>
+<p>Así de claro: un clic para añadir la descarga digital del disco al carrito de la compra, una cajita para teclear el precio y, para los confusos, una interrogación en la que, al hacer clic, aparece una pantalla que dice, simplemente, "it’s up to you", que podríamos traducir libremente por "lo que tú quieras". En caso de que el incrédulo internauta todavía dude, una segunda interrogación le remite a una nueva página en la que asegura "no really, it’s up to you" ("no, de verdad, lo que tú quieras"), y la opción de volver a la página a teclear el precio que se desea pagar por el disco.</p>
+<p>Además, la página permite, para los más mitómanos y para otra gama de necesidades, hacer un pedido físico de una edición especial fabricada únicamente bajo demanda, que contiene dos vinilos y dos CDs con canciónes extra, letras, fotografías y varios artículos más, por un total de cuarenta libras.</p>
+<p>Pero lo mejor del experimento de Radiohead ha sido el resultado: en su primera semana en el mercado, el disco ha alcanzado la friolera de un millón doscientas mil copias descargadas, con un precio medio de ocho dólares cada una. Sí, indudablemente ha habido quien se ha bajado el disco gratis. Ha habido incluso quienes, presas del hábito, se lo han bajado no del sitio oficial del grupo, sino de su red P2P favorita. Pero también ha habido infinidad de personas que han decidido retribuir al grupo su esfuerzo creativo y su confianza en los fans expresada a través de ese gesto. Y sobre todo, el grupo ha dado una lección a una industria retrógrada y corta de miras, la de los intermediarios: un grupo escribe unas canciónes, las graba, y las pone en la red para que sus fans, directamente y sin necesidad de plásticos de ningún tipo ni de distribución en tiendas, puedan hacerse con ellas.</p>
+<p>Con este volumen de ventas, Radiohead habría llegado a ser más que disco de platino en los Estados Unidos mediante ese estúpido sistema del siglo pasado que se dedicaba a glorificar algo tan peregrino como el soporte en el que estaba contenida la música. El éxito de Radiohead demuestra algo muy claro: la muerte de una industria dedicada a "meter al genio en la botella", a hacer lo que había que hacer para poder producir y vender música grabada antes de que existiese Internet.</p>
+<p>Hoy en día, para un grupo puede resultar mucho más rentable autoproducirse y poner la música a disposición del público que dedicarse a firmar contratos de esclavitud leoninos con una serie de intermediarios que aún pretenden ponerse en situación de decidir a quién producen y a quien no, que no aportan prácticamente valor alguno y que incluso, en algunos casos, claramente lo detraen. Como dijera en su momento Olvido Gara, más conocida como Alaska, esto no es para nada la crisis de la música ni la de la creatividad, sino la de una industria dedicada a la fabricación de discos, que como tal desaparecerá... Son los fabricantes de discos los que tienen un problema y los que, por tanto, deben buscar soluciones.</p>
+<p>Ha sido precisamente la vocación de encerrarse en los caducos modelos de siempre y de negarse a buscar soluciones lo que ha llevado a las empresas discográficas a la situación en la que están hoy. Los artistas, hartos de esperar por ellas, han decidido, simplemente, lanzarse a la guerra por su cuenta. Los hay, como Radiohead, que ponen sus discos en la red en sitios desarrollados sin la más mínima sofisticación; o como Madonna, que firman contratos y entran en el accionariado de empresas de promoción de conciertos en directo; o como Prince, que regalan sus discos con diarios de tirada nacional; o como Nine Inch Nails, que se convierten en agentes libres que se representan a sí mismos y anuncian novedades para el año que viene; o como cientos de grupos de todos los estilos y niveles de popularidad que abren páginas en sitios como MySpace y otros similares, esperando llegar directamente a unos fans a los que antes únicamente podían llegar a través de una serie de intermediarios.</p>
+<p>No hay cosa más patética que ver cómo se hunde quien niega sus problemas y acusa de ellos a los demás. Pero lo peor del caso sucede en países como España, en los que esos mismos intermediarios son capaces de hacer lobby y convencer a todo un ministro de Cultura de que no hay más alternativa para la música que la de seguir financiándolos a ellos, como si esos fabricantes de plástico fuesen de verdad importantes para el desarrollo de la cultura. No, señor ministro, no. La música ya no requiere de intermediarios. Puede usted protegerla de muchas maneras, pero no financiando con el dinero de los ciudadanos a quienes se ha transformado en estorbo.</p>
+<p>Los músicos que quieren defender su labor ya están aprendiendo que el negocio está en desarrollar comunidades de fans que valoren su música y quieran pagar por ella en la red, en los conciertos, o identificándose con el músico hasta el punto de comprar su merchandising. ¿Aprecian la diferencia? Desarrollar comunidades con sus fans, no insultarles, ni aprovecharse de la ignorancia de los políticos para robar a los pacíficos ciudadanos que se compran un CD, un pendrive o un reproductor de MP3. Estudie un poco de economía, señor ministro, y déjese de estúpidos cánones, de intermediarios llorones y de que la música está en peligro. Radiohead y muchos otros han demostrado que eso no es verdad: que se puede ganar dinero con la música, hacer las delicias de los fans y no alimentar a más intermediarios de los necesarios. Con su canon, señor ministro, sólo estimulará a vagos que se niegan a evolucionar para que sigan siendo vagos y negándose a evolucionar. Señor ministro, sea o no su tipo de música, apréndase, por favor, la lección de Radiohead.</p>
+<p>Columna de Enrique Dans, LaLibertadDigital.es</p>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

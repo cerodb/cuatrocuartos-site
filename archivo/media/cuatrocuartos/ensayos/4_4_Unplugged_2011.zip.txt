@@ -1,0 +1,9 @@
+Archivo grande excluido del repositorio Git.
+
+Nombre original: 4_4_Unplugged_2011.zip
+Tamaño aproximado: 53.5 MB
+Ruta original dentro del proyecto: site/archivo/media/cuatrocuartos/ensayos/4_4_Unplugged_2011.zip
+Copia local movida a: _large-files-excluded/site/archivo/media/cuatrocuartos/ensayos/4_4_Unplugged_2011.zip
+Respaldo externo: disco de respaldo de Gabriel.
+
+Para restaurar, copiar este archivo desde el respaldo o desde _large-files-excluded/ a la ruta original.

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Demasiado Eyebrow bombing — Archivo Cuatro Cuartos</title>
+<meta name="description" content="Demasiado Eyebrow bombing">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/archivo/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2008-07-29 / post</div>
+      <h1>Demasiado Eyebrow bombing</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2008/07/29/demasiado-eyebrow-bombing/</p>
+    </header>
+    <h2>Demasiado Eyebrow bombing</h2>
+<p>_Extracto de la obra "Crónicas desde un lugar seguro" de George del Gran Balde._</p>
+<p>Después de años de formar parte de las entrañas mismas de Cu4tro Cu4rtos comencé a descubrir y (en parte) a comprender técnicas que cada uno de sus miembros emplea en diversos aspectos de su quehacer artístico, como lo son componer, cantar, servir whisky, generar excusas para llegar tarde o incluso faltar a los ensayos, etc. Este conocimiento me sirvió para varias cosas:</p>
+<p>\- Me permitió elaborar mi propia lista de queNOhacer artístico.</p>
+<p>\- Me ayudó (o mejor dicho, me empujó) a cambiar mi percepción acerca de las habilidades y talentos de mis otrora colegas, permitiéndome hoy afirmar con total convicción que aquellos a los que una vez admiré y acompañé con vehemencia en varios proyectos son sólo, en contadas ocasiones y aspectos, algo más que una manga de borrachos seriamente limitados en sus capacidades intelectuales y motrices.</p>
+<p>\- Me mostró la necesidad de determinar con total precisión la mínima distancia a la que mantenerme de esta banda. Esto fue sin dudas lo que más me costó, tanto en esfuerzo como en tiempo. Finalmente creo que logré resolver la compleja ecuación de vida que yo mismo me había planteado: el valor de x era "lo más cercano al círculo polar ártico que el cuerpo resista". Y obré en consecuencia. Y vaya que lo hice.</p>
+<p>Entre estas curiosas técnicas que logré identificar se encuentra el "Eyebrow bombing", utilizado con bastante, mucha, demasiada frecuencia por uno de los guitarristas de la banda, Julio (más conocido como "Pikachu Lover", "Chorus Man", "Siempre en problemas" o simplemente "Chulo"), en la ejecución de su instrumento.</p>
+<p>Pero ¿en qué consiste exactamente el "Eyebrow Bombing"? Me remito a una descripción que su propio creador me hizo en una ocasión en que, aprovechándome de su muy avanzado estado etílico (10 minutos después de comenzado un ensayo), lo interrogué al respecto:</p>
+<p>" (HIC) Es como si (HIC)..... " (BONK) . Luego de ayudarlo a ponerse en pie y llenarle su vaso nuevamente para que dejara de repetir que estaba en graves problemas, Chulo prosiguió: "Sieeempprrreee (HIC) queda la nooooocheee (HIC HIC) sieempre queeeda la nocheeeee (HIC) (BERP)"</p>
+<p>... y en realidad nada me explicó en palabras, pero mientras se tambaleaba y repetía con vehemencia ese estribillo (perteneciente a "Cop girl blues", uno de los éxitos del grupo), comenzó a ejecutar en su legendaria Stratocaster la mencionada técnica para acompañarse. Y por suerte, mi intencional proximidad en ese momento me ayudó a comprenderla.</p>
+<p>En principio debo decir que ver al Chulo en esa situación de semi-lucidez intelectual pero aún así con absoluta claridad artística hizo que me percatara de que el "Eyebrow bombing" es algo más que una técnica de ejecución de la guitarra, es un concepto, una actitud: Actitud Eyebrow Bombing. Considero que este punto es más importante que cualquier descripción que se pueda hacer, y pone de manifiesto que el estudio del Eyebrow Bombing se debería abordar idealmente desde una perspectiva holística, cosa que no haré en este artículo por razones de síntesis y salud.</p>
+<p>Así que, estrictamente en lo que a la ejecución en guitarra refiere, el Eyebrow bombing consiste en "bombear" el diapasón de la guitarra mientras se hace un acorde con ceja y se atacan las cuerdas con la púa a gran velocidad en ambas direcciones (ascendente y descendente) al ritmo del tema. El "bombeo" produce un efecto sonoro único, ya que consigue alternar el sonido del acorde con silencios y "raca-racas", todo ello al ritmo del tema. Glorioso. Inmenso (gracias Pablo). De hecho, de las pocas cosas vinculadas a Cu4tro Cu4rtos que responde a dichas características.</p>
+<p>A pesar de que la explicación anterior parece arrojar luz sobre el Eyebrow bombing, el gran secreto para lograr su total efectividad (y vuelvo a insistir en que me refiero únicamente a la técnica de ejecución en guitarra, dejando de lado el enfoque holístico que esto amerita) está en el adecuado manejo de los tiempos de bombeo. Sólo la combinación exacta de las velocidades de rasgueo y bombeo producirán el inconfundible y envidiable efecto que se puede apreciar en las grabaciones y conciertos de Cu4tro Cu4rtos. Y de más está decir que dicha combinación es única para cada tema, en función de su tempo y desarrollo.</p>
+<p>Para desilusión de los guitarristas que han leído hasta aquí con el propósito de incorporar el Eyebrow bombing a su cajita de recursos, debo decir que a pesar de mis no pocos esfuerzos durante aquellos y estos años, no he logrado sistematizar el proceso que, dado un tema, permite llegar a la adecuada combinación de velocidades de bombeo y rasgueo. Mucho tiempo e ilusiones he destinado a esta tarea, y los resultados han sido desalentadores, cuando no desastrosos (mis ampliamente denostadas composiciones "Blisty index finger", "Useless left hand" y "Ouch Ouch Ouch" surgieron como una ramificación de esta obsesiva pesquisa).</p>
+<p>Con este artículo pongo oficialmente punto final a mi larga búsqueda. En lo que a mí respecta, el secreto del Eyebrow bombing es algo así como el Santo Grial del Brit Latino. Bienaventurados quienes logren llegar al él. Yo ya tuve más que suficiente, demasiado. Demasiado Eyebrow bombing.</p>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

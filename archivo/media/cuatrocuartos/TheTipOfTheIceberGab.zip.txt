@@ -1,0 +1,9 @@
+Archivo grande excluido del repositorio Git.
+
+Nombre original: TheTipOfTheIceberGab.zip
+Tamaño aproximado: 68.5 MB
+Ruta original dentro del proyecto: site/archivo/media/cuatrocuartos/TheTipOfTheIceberGab.zip
+Copia local movida a: _large-files-excluded/site/archivo/media/cuatrocuartos/TheTipOfTheIceberGab.zip
+Respaldo externo: disco de respaldo de Gabriel.
+
+Para restaurar, copiar este archivo desde el respaldo o desde _large-files-excluded/ a la ruta original.

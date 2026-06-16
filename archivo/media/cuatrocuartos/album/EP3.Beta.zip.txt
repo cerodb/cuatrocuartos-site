@@ -1,0 +1,9 @@
+Archivo grande excluido del repositorio Git.
+
+Nombre original: EP3.Beta.zip
+Tamano aproximado: 22.4 MB
+Ruta original dentro del proyecto: site/archivo/media/cuatrocuartos/album/EP3.Beta.zip
+Copia local movida a: _large-files-excluded/site/archivo/media/cuatrocuartos/album/EP3.Beta.zip
+Respaldo externo: disco de respaldo de Gabriel.
+
+Para restaurar, copiar este archivo desde el respaldo o desde _large-files-excluded/ a la ruta original.

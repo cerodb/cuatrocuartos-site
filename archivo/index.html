@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Archivo — Cuatro Cuartos</title>
+<meta name="description" content="Archivo histórico de Cuatro Cuartos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/archivo/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main>
+  <section class="hero">
+    <div class="eyebrow">Archivo viejo</div>
+    <h1>Rock, posts y memoria.</h1>
+    <p class="intro">Una reconstrucción simple del sitio histórico de Cuatro Cuartos. Las URLs viejas se conservan, los links internos vuelven al archivo y las descargas antiguas se reemplazan por Spotify o por la home de <em>Chau!</em>.</p>
+  </section>
+  <section class="archive-grid">
+    <section class="year-block">
+      <div class="year">Pages</div>
+      <div class="entry-list"><a href="/archivo/informacion/">Información</a>
+<a href="/archivo/contacto/">Contacto</a>
+<a href="/archivo/fotos-flickr/">Fotos en Flickr</a>
+<a href="/archivo/fotos-en-picasa/">Fotos en Picasa</a>
+<a href="/archivo/descargas/">Descargas</a></div>
+    </section>
+    <section class="year-block"><div class="year">2021</div><div class="entry-list"><div class="entry-row"><span class="entry-date">12-21</span><a class="entry-title" href="/archivo/2021/12/21/balas-en-el-bar/">&quot;Balas en el Bar&quot;</a></div>
+<div class="entry-row"><span class="entry-date">11-07</span><a class="entry-title" href="/archivo/2021/11/07/nuevo-lanzamiento-el-cancerbero/">Nuevo Lanzamiento &quot;El Cancerbero&quot;</a></div>
+<div class="entry-row"><span class="entry-date">10-03</span><a class="entry-title" href="/archivo/2021/10/03/en-novedades-rock-por-una-semana/">En &quot;Novedades Rock&quot; por una semana</a></div>
+<div class="entry-row"><span class="entry-date">09-26</span><a class="entry-title" href="/archivo/2021/09/26/nuevo-lanzamiento-llave-por-cu4tro-cu4rtos/">Nuevo lanzamiento: &quot;Llave&quot; por Cu4tro Cu4rtos</a></div>
+<div class="entry-row"><span class="entry-date">08-11</span><a class="entry-title" href="/archivo/2021/08/11/lanzamiento-de-tambien-hay-strawberry-fields/">Lanzamiento de &quot;También Hay Strawberry Fields&quot;</a></div>
+<div class="entry-row"><span class="entry-date">01-08</span><a class="entry-title" href="/archivo/2021/01/08/me-da-igual-en-spotify-y-demas-plataformas-de-streaming/">Me Da Igual en Spotify y demás plataformas de streaming</a></div></div></section><section class="year-block"><div class="year">2020</div><div class="entry-list"><div class="entry-row"><span class="entry-date">02-07</span><a class="entry-title" href="/archivo/2020/02/07/quedar-quedan-en-soundcloud/">Quedar Quedan en SoundCloud!</a></div></div></section><section class="year-block"><div class="year">2013</div><div class="entry-list"><div class="entry-row"><span class="entry-date">12-22</span><a class="entry-title" href="/archivo/2013/12/22/lanzamiento-del-ep3/">Toque Lanzamiento del EP3</a></div></div></section><section class="year-block"><div class="year">2011</div><div class="entry-list"><div class="entry-row"><span class="entry-date">07-28</span><a class="entry-title" href="/archivo/2011/07/28/el-camino-the-way/">El Camino (The Way)</a></div>
+<div class="entry-row"><span class="entry-date">07-28</span><a class="entry-title" href="/archivo/2011/07/28/running-on-faith/">Running On Faith</a></div>
+<div class="entry-row"><span class="entry-date">07-28</span><a class="entry-title" href="/archivo/2011/07/28/unplugged-toma-2-en-vivo/">Unplugged - Toma 2 en Vivo (2011)</a></div>
+<div class="entry-row"><span class="entry-date">06-28</span><a class="entry-title" href="/archivo/2011/06/28/la-estalactita-tallada-de-nuevo-no/">La estalactita tallada, de nuevo, no.</a></div></div></section><section class="year-block"><div class="year">2010</div><div class="entry-list"><div class="entry-row"><span class="entry-date">04-13</span><a class="entry-title" href="/archivo/2010/04/13/quedar-quedan-ep3-2009/">Lanzamos &quot;Quedar Quedan - EP3&quot; (2009-10)</a></div>
+<div class="entry-row"><span class="entry-date">04-09</span><a class="entry-title" href="/archivo/2010/04/09/3-de-junio-en-belavita-bar/">3 de Junio en Belavita Bar</a></div>
+<div class="entry-row"><span class="entry-date">04-01</span><a class="entry-title" href="/archivo/2010/04/01/mano-a-mano-no-es-el-tango/">Mano a Mano</a></div>
+<div class="entry-row"><span class="entry-date">03-01</span><a class="entry-title" href="/archivo/2010/03/01/prefiero-2010/">Prefiero 2010</a></div></div></section><section class="year-block"><div class="year">2009</div><div class="entry-list"><div class="entry-row"><span class="entry-date">12-26</span><a class="entry-title" href="/archivo/2009/12/26/descargas/">Descargas</a></div>
+<div class="entry-row"><span class="entry-date">09-05</span><a class="entry-title" href="/archivo/2009/09/05/wallpaper-gratis-de-rock-uruguayo/">Wallpaper Gratis de Rock Uruguayo</a></div>
+<div class="entry-row"><span class="entry-date">09-02</span><a class="entry-title" href="/archivo/2009/09/02/8wt9yhkjea/">b3zf5ynx7t</a></div>
+<div class="entry-row"><span class="entry-date">08-15</span><a class="entry-title" href="/archivo/2009/08/15/quedar-quedan/">Quedar Quedan</a></div>
+<div class="entry-row"><span class="entry-date">05-22</span><a class="entry-title" href="/archivo/2009/05/22/grabado-con-presonus-firebox/">Grabado Con Presonus Firebox</a></div>
+<div class="entry-row"><span class="entry-date">05-20</span><a class="entry-title" href="/archivo/2009/05/20/el-dia-despues/">El día después</a></div>
+<div class="entry-row"><span class="entry-date">05-19</span><a class="entry-title" href="/archivo/2009/05/19/cuatro-cuartos-en-la-947-de-la-mano-del-tio-riki/">Cuatro Cuartos en la 94.7 de la mano del tío Riki</a></div>
+<div class="entry-row"><span class="entry-date">05-01</span><a class="entry-title" href="/archivo/2009/05/01/el-casamiento-del-ano-barzilai-argenti-argenti-barzilai/">El Casamiento del Año: Barzilai - Argenti, Argenti - Barzilai</a></div>
+<div class="entry-row"><span class="entry-date">02-27</span><a class="entry-title" href="/archivo/2009/02/27/nuestro-dominio-volvio-a-nosotros/">Nuestro dominio volvió a nosotros!!</a></div></div></section><section class="year-block"><div class="year">2008</div><div class="entry-list"><div class="entry-row"><span class="entry-date">12-23</span><a class="entry-title" href="/archivo/2008/12/23/mejor-natural/">Mejor Natural</a></div>
+<div class="entry-row"><span class="entry-date">11-19</span><a class="entry-title" href="/archivo/2008/11/19/cuatro-cuartos-apoya-el-movimiento-en-pos-del-colet-de-medio-litro/">Cuatro Cuartos apoya el movimiento en pos del Colet de Medio Litro.</a></div>
+<div class="entry-row"><span class="entry-date">10-28</span><a class="entry-title" href="/archivo/2008/10/28/la-historia-de-cuatro-cuartos-segun-facebook/">La Historia de Cuatro Cuartos, Según Facebook</a></div>
+<div class="entry-row"><span class="entry-date">10-12</span><a class="entry-title" href="/archivo/2008/10/12/que-en-alcohol-descanse/">Que en alcohol descanse!</a></div>
+<div class="entry-row"><span class="entry-date">10-10</span><a class="entry-title" href="/archivo/2008/10/10/this-is-dow-wallpaper-de-rock-uruguayo/">This is Dow | Wallpaper de Rock Uruguayo</a></div>
+<div class="entry-row"><span class="entry-date">09-25</span><a class="entry-title" href="/archivo/2008/09/25/cuatro-cuartos-uy-nueva-pagina-mismo-talento/">Cuatro Cuartos (UY) | Nueva Página, Mismo Talento.</a></div>
+<div class="entry-row"><span class="entry-date">09-23</span><a class="entry-title" href="/archivo/2008/09/23/fotos-picasa/">Fotos Picasa</a></div>
+<div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/2008/09/09/lista-de-temas-grabados-yo-escritos-por-cuatro-cuartos/">Lista de Temas grabados y/o escritos por Cuatro Cuartos</a></div>
+<div class="entry-row"><span class="entry-date">08-29</span><a class="entry-title" href="/archivo/2008/08/29/pequeo-cu4rto-e-lustrado-1era-entrega/">Pequeño Cu4rto e-lustrado. 1era entrega</a></div>
+<div class="entry-row"><span class="entry-date">07-30</span><a class="entry-title" href="/archivo/2008/07/30/me-da-igual-ep2-2008/">Me Da Igual - EP2 (2008)</a></div>
+<div class="entry-row"><span class="entry-date">07-29</span><a class="entry-title" href="/archivo/2008/07/29/demasiado-eyebrow-bombing/">Demasiado Eyebrow bombing</a></div>
+<div class="entry-row"><span class="entry-date">07-27</span><a class="entry-title" href="/archivo/2008/07/27/descargar-la-ltima-funcin-de-cuatro/">Descargar la Última Función - EP1, de Cuatro Cuartos</a></div>
+<div class="entry-row"><span class="entry-date">07-27</span><a class="entry-title" href="/archivo/2008/07/27/pienso-nuevamente-2/">Pienso Nuevamente - descargar</a></div>
+<div class="entry-row"><span class="entry-date">07-27</span><a class="entry-title" href="/archivo/2008/07/27/pienso-nuevamente/">Pienso Nuevamente</a></div>
+<div class="entry-row"><span class="entry-date">07-27</span><a class="entry-title" href="/archivo/2008/07/27/qu-es-un-britn/">Qué es un Britón?</a></div>
+<div class="entry-row"><span class="entry-date">07-22</span><a class="entry-title" href="/archivo/2008/07/22/cop-girl-blues-whisky-no-hay-mas/">Cop Girl Blues (Whisky No hay Más)</a></div>
+<div class="entry-row"><span class="entry-date">07-09</span><a class="entry-title" href="/archivo/2008/07/09/hoy-voy-salir-fake-o-clip/">Hoy Voy a Salir | Fake-o-Clip</a></div>
+<div class="entry-row"><span class="entry-date">06-28</span><a class="entry-title" href="/archivo/2008/06/28/qu-es-el-brit-latino/">Qué es el Brit Latino?</a></div>
+<div class="entry-row"><span class="entry-date">06-25</span><a class="entry-title" href="/archivo/2008/06/25/cop-girl-blues/">Cop Girl Blues</a></div>
+<div class="entry-row"><span class="entry-date">05-26</span><a class="entry-title" href="/archivo/2008/05/26/la-vieja-escuela-del-rock/">La vieja escuela del rock</a></div>
+<div class="entry-row"><span class="entry-date">05-26</span><a class="entry-title" href="/archivo/2008/05/26/la-vieja-escuela-del-rock/">La vieja escuela del rock</a></div>
+<div class="entry-row"><span class="entry-date">05-26</span><a class="entry-title" href="/archivo/2008/05/26/rockontherockscom/">RockOnTheRocks.com</a></div>
+<div class="entry-row"><span class="entry-date">05-06</span><a class="entry-title" href="/archivo/2008/05/06/cuatro-cuartos-es-el-brit-latino/">Cuatro Cuartos es el Brit Latino</a></div>
+<div class="entry-row"><span class="entry-date">04-30</span><a class="entry-title" href="/archivo/2008/04/30/divertimento-para-fans-de-la-banda/">Divertimento para fans de la banda</a></div>
+<div class="entry-row"><span class="entry-date">04-29</span><a class="entry-title" href="/archivo/2008/04/29/cuatro-cuartos-en-garageband/">Cuatro Cuartos en GarageBand</a></div>
+<div class="entry-row"><span class="entry-date">03-23</span><a class="entry-title" href="/archivo/2008/03/23/hoy-voy-a-salir/">Hoy Voy a Salir</a></div></div></section><section class="year-block"><div class="year">2007</div><div class="entry-list"><div class="entry-row"><span class="entry-date">11-19</span><a class="entry-title" href="/archivo/2007/11/19/santiago-x-en-sorpresiva-y-reveladora-confesion/">Santiago X en sorpresiva y reveladora confesión</a></div>
+<div class="entry-row"><span class="entry-date">11-12</span><a class="entry-title" href="/archivo/2007/11/12/grabacion-van-11-dias-cuack/">Grabación... van 11 dias. Cuack!</a></div>
+<div class="entry-row"><span class="entry-date">11-12</span><a class="entry-title" href="/archivo/2007/11/12/tendencias-inmobiliarias-la-revista-que-bella-bellota/">Tendencias Inmobiliarias (la revista): Que bella bellota!</a></div>
+<div class="entry-row"><span class="entry-date">11-06</span><a class="entry-title" href="/archivo/2007/11/06/presonus-firebox-nuevo-hardware-chiche/">Presonus FireBox - Nuevo Hardware (Chiche)</a></div>
+<div class="entry-row"><span class="entry-date">10-24</span><a class="entry-title" href="/archivo/2007/10/24/dos-maquetas-casi-listas/">Dos maquetas casi listas</a></div>
+<div class="entry-row"><span class="entry-date">10-23</span><a class="entry-title" href="/archivo/2007/10/23/me-da-igual/">Me da Igual</a></div>
+<div class="entry-row"><span class="entry-date">10-22</span><a class="entry-title" href="/archivo/2007/10/22/cmo-levantar-el-nimo-de-un-compaero-de/">Cómo levantar el ánimo de un compañero de trabajo</a></div>
+<div class="entry-row"><span class="entry-date">10-22</span><a class="entry-title" href="/archivo/2007/10/22/radio-head-muestra-el-camino/">Radio Head muestra el camino</a></div>
+<div class="entry-row"><span class="entry-date">10-15</span><a class="entry-title" href="/archivo/2007/10/15/feliz-da-de-accin-de-blog-medio/">FELIZ DÍA DE ACCiÓN DE BLOG, MEDIO AMBIENTE DEL MUNDO ENTERO!</a></div>
+<div class="entry-row"><span class="entry-date">10-08</span><a class="entry-title" href="/archivo/2007/10/08/gona-does/">GONA DOES</a></div>
+<div class="entry-row"><span class="entry-date">10-08</span><a class="entry-title" href="/archivo/2007/10/08/looking-through-glass-que-vinonion/">Looking through a glass que Vinonion Fallado</a></div>
+<div class="entry-row"><span class="entry-date">10-04</span><a class="entry-title" href="/archivo/2007/10/04/grabacin-da-3/">Grabación día 3</a></div>
+<div class="entry-row"><span class="entry-date">10-03</span><a class="entry-title" href="/archivo/2007/10/03/narguilas-en-uruguay/">Narguilas en Uruguay</a></div>
+<div class="entry-row"><span class="entry-date">09-26</span><a class="entry-title" href="/archivo/2007/09/26/todos-los-cuatro-cuartos-del-mundo-unios/">Todos los cuatro cuartos del mundo... UNÍOS</a></div>
+<div class="entry-row"><span class="entry-date">09-12</span><a class="entry-title" href="/archivo/2007/09/12/bateries-included/">Bateries included</a></div>
+<div class="entry-row"><span class="entry-date">09-12</span><a class="entry-title" href="/archivo/2007/09/12/un-experimento-sonoro-muy-particular/">Un &amp;quot;Experimento sonoro muy particular&amp;quot;</a></div>
+<div class="entry-row"><span class="entry-date">09-08</span><a class="entry-title" href="/archivo/2007/09/08/otros-temas-que-pasaron-x-el-repertorio-sin-grabarse/">Otros Temas que pasaron x el Repertorio Sin Grabarse</a></div>
+<div class="entry-row"><span class="entry-date">08-21</span><a class="entry-title" href="/archivo/2007/08/21/nunca-mas-m-audio/">Nunca más M-Audio</a></div>
+<div class="entry-row"><span class="entry-date">07-20</span><a class="entry-title" href="/archivo/2007/07/20/back-on-tracks/">Back on tracks</a></div>
+<div class="entry-row"><span class="entry-date">01-26</span><a class="entry-title" href="/archivo/2007/01/26/cuatro-cuartos-l-iv-e-nuevos-videos-disponibles-en-wamba/">Cuatro Cuartos L | IV | e: Nuevos Videos Disponibles en Wamba!</a></div></div></section><section class="year-block"><div class="year">2006</div><div class="entry-list"><div class="entry-row"><span class="entry-date">11-30</span><a class="entry-title" href="/archivo/2006/11/30/casamiento-de-javier-daz/">Casamiento De Javier Díaz</a></div>
+<div class="entry-row"><span class="entry-date">10-15</span><a class="entry-title" href="/archivo/2006/10/15/our-misunderstanding/">Our Misunderstanding</a></div>
+<div class="entry-row"><span class="entry-date">10-15</span><a class="entry-title" href="/archivo/2006/10/15/the-devils-been-busy-in-your-backyard/">The Devil&#x27;s been busy in your Backyard</a></div>
+<div class="entry-row"><span class="entry-date">10-01</span><a class="entry-title" href="/archivo/2006/10/01/novedades/">Novedades</a></div>
+<div class="entry-row"><span class="entry-date">02-21</span><a class="entry-title" href="/archivo/2006/02/21/cu4tro-cu4rtos-2006/">Cu4tro Cu4rtos 2006</a></div>
+<div class="entry-row"><span class="entry-date">02-20</span><a class="entry-title" href="/archivo/2006/02/20/flickr-y-cu4tro-cu4rtos-unen-fuerzas/">Flickr y Cu4tro Cu4rtos unen fuerzas!</a></div>
+<div class="entry-row"><span class="entry-date">02-20</span><a class="entry-title" href="/archivo/2006/02/20/gabriel-simonet-bajo/">Gabriel Simonet - Bajo</a></div>
+<div class="entry-row"><span class="entry-date">02-20</span><a class="entry-title" href="/archivo/2006/02/20/gonzalo-angeriz-guitarra/">Gonzalo Angeriz - Guitarra</a></div>
+<div class="entry-row"><span class="entry-date">02-20</span><a class="entry-title" href="/archivo/2006/02/20/gonzalo-argenti-batera/">Gonzalo Argenti - Batería</a></div>
+<div class="entry-row"><span class="entry-date">02-20</span><a class="entry-title" href="/archivo/2006/02/20/julio-molla-guitarra-y-voces/">Julio Molla - Guitarra y Voces</a></div></div></section><section class="year-block"><div class="year">2005</div><div class="entry-list"><div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/2005/09/09/back-in-the-ussr/">Back in The USSR</a></div>
+<div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/2005/09/09/im-down/">I&#x27;m Down</a></div>
+<div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/2005/09/09/running-down-a-dream/">Running Down a Dream</a></div>
+<div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/2005/09/09/traveling-band/">Traveling Band</a></div>
+<div class="entry-row"><span class="entry-date">02-09</span><a class="entry-title" href="/archivo/2005/02/09/cu4tro-cu4rtos-o-cuatro-cuartos/">Cu4tro Cu4rtos o Cuatro Cuartos</a></div></div></section><section class="year-block"><div class="year">2001</div><div class="entry-list"><div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/2001/09/09/be-bop-a-lula/">Be Bop a Lula</a></div>
+<div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/2001/09/09/born-to-be-wild/">Born to be Wild</a></div></div></section><section class="year-block"><div class="year">1999</div><div class="entry-list"><div class="entry-row"><span class="entry-date">12-12</span><a class="entry-title" href="/archivo/1999/12/12/nadie-tiene-a-nadie/">Nadie tiene a Nadie</a></div>
+<div class="entry-row"><span class="entry-date">12-12</span><a class="entry-title" href="/archivo/1999/12/12/nadie-tiene-a-nadie/">Nadie tiene a Nadie</a></div>
+<div class="entry-row"><span class="entry-date">12-12</span><a class="entry-title" href="/archivo/1999/12/12/no-estas/">No estás</a></div>
+<div class="entry-row"><span class="entry-date">02-23</span><a class="entry-title" href="/archivo/1999/02/23/foto-cu4tro-cu4rtos/">Foto Cu4tro Cu4rtos</a></div>
+<div class="entry-row"><span class="entry-date">02-22</span><a class="entry-title" href="/archivo/1999/02/22/los-primeros-temas-de-cu4tro-cuatro-cuartos/">Los primeros temas de Cu4tro (Cuatro Cuartos)</a></div></div></section><section class="year-block"><div class="year">1998</div><div class="entry-list"><div class="entry-row"><span class="entry-date">11-01</span><a class="entry-title" href="/archivo/1998/11/01/cuando-todos-ramos-flacos/">Cuando todos éramos flacos</a></div></div></section><section class="year-block"><div class="year">1997</div><div class="entry-list"><div class="entry-row"><span class="entry-date">11-17</span><a class="entry-title" href="/archivo/1997/11/17/leyenda-bizarra-de-cu4tro-cu4rtos/">Leyenda bizarra de Cu4tro Cu4rtos</a></div>
+<div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/1997/09/09/hound-dog/">Hound Dog</a></div>
+<div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/1997/09/09/pretty-woman/">Pretty Woman</a></div>
+<div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/1997/09/09/si-falta-tu-amor/">Si Falta tu Amor</a></div>
+<div class="entry-row"><span class="entry-date">08-27</span><a class="entry-title" href="/archivo/1997/08/27/cuatro-cuartos/">Cuatro Cuartos</a></div>
+<div class="entry-row"><span class="entry-date">03-01</span><a class="entry-title" href="/archivo/1997/03/01/4-te4m-faqs/">4-Te4m FAQ’s</a></div></div></section><section class="year-block"><div class="year">1996</div><div class="entry-list"><div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/1996/09/09/a-rodar-la-vida/">A rodar la Vida</a></div>
+<div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/1996/09/09/down-and-down/">Down and Down</a></div>
+<div class="entry-row"><span class="entry-date">09-09</span><a class="entry-title" href="/archivo/1996/09/09/summer-of-69/">Summer of 69</a></div></div></section>
+  </section>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

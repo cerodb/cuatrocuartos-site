@@ -1,0 +1,9 @@
+Archivo grande excluido del repositorio Git.
+
+Nombre original: QuedarQuedan2008_02.mp3
+Tamano aproximado: 7.3 MB
+Ruta original dentro del proyecto: site/archivo/media/cuatrocuartos/QuedarQuedan2008_02.mp3
+Copia local movida a: _large-files-excluded/site/archivo/media/cuatrocuartos/QuedarQuedan2008_02.mp3
+Respaldo externo: disco de respaldo de Gabriel.
+
+Para restaurar, copiar este archivo desde el respaldo o desde _large-files-excluded/ a la ruta original.

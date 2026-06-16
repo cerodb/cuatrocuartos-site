@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Chau! — Gabriel Simonet se despide de Cuatro Cuartos</title>
+<meta name="description" content="Chau! es el disco de despedida de Cuatro Cuartos (UY) by Gabriel Simonet. 27 años de rock uruguayo en español. 12 canciones producidas por Max Capote, Hernán Romero y Damián Palacios. Disponible en Spotify, Apple Music y todas las plataformas.">
+<link rel="canonical" href="https://cuatrocuartos.com/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Cuatro Cuartos">
+<meta name="keywords" content="Cuatro Cuartos, Cu4tro Cu4rtos, Cuatro Cuartos UY, Gabriel Simonet, Chau, album, rock uruguayo, rock en español, Montevideo, Uruguay, despedida, Max Capote, Hernán Romero, Damián Palacios">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Chau! — Gabriel Simonet se despide de Cuatro Cuartos">
+<meta property="og:description" content="El disco de despedida de Cuatro Cuartos (UY) by Gabriel Simonet. 27 años de rock uruguayo en español. 12 canciones. Disponible en Spotify, Apple Music y todas las plataformas.">
+<meta property="og:type" content="music.album">
+<meta property="og:url" content="https://cuatrocuartos.com/">
+<meta property="og:site_name" content="Cuatro Cuartos">
+<meta property="og:locale" content="es_UY">
+<meta property="music:musician" content="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">
+<meta property="music:release_date" content="2024-08-27">
+<meta property="music:song_count" content="12">
+<meta property="music:duration" content="2747">
+<meta property="og:image" content="https://cuatrocuartos.com/cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Portada del álbum Chau! de Cuatro Cuartos by Gabriel Simonet">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@cuatro_cuartos">
+<meta name="twitter:title" content="Chau! — Gabriel Simonet se despide de Cuatro Cuartos">
+<meta name="twitter:description" content="El disco de despedida. 27 años de rock uruguayo. 12 canciones. Escuchalo ahora.">
+<meta name="twitter:image" content="https://cuatrocuartos.com/cover.jpg">
+<meta name="twitter:image:alt" content="Portada del álbum Chau! de Cuatro Cuartos by Gabriel Simonet">
+
+<!-- JSON-LD: MusicAlbum + MusicGroup + Tracks -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicAlbum",
+  "name": "Chau!",
+  "alternateName": "Chau",
+  "description": "Chau! es el disco de despedida de Cuatro Cuartos (UY) by Gabriel Simonet. Después de 27 años de rock en español desde Montevideo, Uruguay, este álbum de 12 canciones cierra un capítulo con Max Capote, Hernán Romero, Damián Palacios, Pedro Hordeñana y Gonzalo Angeriz cerca del proceso. Cuatro años de trabajo desde 2020, con material nuevo y remixes/remasters de clásicos.",
+  "url": "https://cuatrocuartos.com/",
+  "image": "https://cuatrocuartos.com/cover.jpg",
+  "datePublished": "2024-08-27",
+  "numTracks": 12,
+  "genre": ["Rock en español", "Rock uruguayo", "Rock"],
+  "inLanguage": "es",
+  "albumProductionType": "https://schema.org/StudioAlbum",
+  "albumReleaseType": "https://schema.org/AlbumRelease",
+  "byArtist": {
+    "@type": "MusicGroup",
+    "name": "Cuatro Cuartos",
+    "alternateName": ["Cu4tro Cu4rtos", "Cuatro Cuartos (UY)"],
+    "description": "Banda de rock uruguayo en español activa desde 1997. Con base en Montevideo, Uruguay, Cuatro Cuartos (también escrito Cu4tro Cu4rtos, y a veces Cuatro Cuartos (UY)) fusiona rock con toques brit, californiano y rioplatense. Fundada por Gabriel Simonet y Gonzalo Angeriz.",
+    "url": "https://cuatrocuartos.com/",
+    "sameAs": [
+      "https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v",
+      "https://music.apple.com/us/album/chau/1756747961",
+      "https://www.deezer.com/album/614134332",
+      "https://twitter.com/cuatro_cuartos",
+      "https://www.facebook.com/cuatrocuartos.uy",
+      "https://gabrielsimonet.ffm.to/chau"
+    ],
+    "foundingDate": "1997",
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "Montevideo, Uruguay"
+    },
+    "genre": ["Rock en español", "Rock uruguayo"],
+    "member": [
+      {"@type": "Person", "name": "Gabriel Simonet", "roleName": "Voz, composición"},
+      {"@type": "Person", "name": "Gonzalo Angeriz", "roleName": "Composición"},
+      {"@type": "Person", "name": "Damián Palacios", "roleName": "Guitarras, producción"},
+      {"@type": "Person", "name": "Glenn Welman", "roleName": "Batería"},
+      {"@type": "Person", "name": "Jaime González Presto", "roleName": "Guitarras"},
+      {"@type": "Person", "name": "Nico Nieto", "roleName": "Guitarras"},
+      {"@type": "Person", "name": "Gonzalo Argenti", "roleName": "Batería"},
+      {"@type": "Person", "name": "Julio Mollá", "roleName": "Guitarras"}
+    ]
+  },
+  "producer": [
+    {"@type": "Person", "name": "Gabriel Simonet"},
+    {"@type": "Person", "name": "Max Capote"},
+    {"@type": "Person", "name": "Hernán Romero"},
+    {"@type": "Person", "name": "Damián Palacios"},
+    {"@type": "Person", "name": "Pedro Hordeñana"}
+  ],
+  "track": {
+    "@type": "ItemList",
+    "numberOfItems": 12,
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "item": {"@type": "MusicRecording", "name": "El Disfraz", "duration": "PT3M29S", "url": "https://open.spotify.com/track/3fyXjhQil9doxBwJmBY8tj"}},
+      {"@type": "ListItem", "position": 2, "item": {"@type": "MusicRecording", "name": "Llave", "duration": "PT2M53S", "url": "https://open.spotify.com/track/3kCN45lig3rqY4NgYDGxsf"}},
+      {"@type": "ListItem", "position": 3, "item": {"@type": "MusicRecording", "name": "No Sé Qué Decir", "duration": "PT3M52S", "url": "https://open.spotify.com/track/5enHL72ocupOAU1Tb0KyIE"}},
+      {"@type": "ListItem", "position": 4, "item": {"@type": "MusicRecording", "name": "Los Lunes", "duration": "PT5M00S", "url": "https://open.spotify.com/track/3hzcVZCqVtKcbU8ydpLjAY"}},
+      {"@type": "ListItem", "position": 5, "item": {"@type": "MusicRecording", "name": "El Cancerbero", "duration": "PT2M53S", "url": "https://open.spotify.com/track/1eEfraIqEpx7VjNGrlDUeB"}},
+      {"@type": "ListItem", "position": 6, "item": {"@type": "MusicRecording", "name": "¿Qué me dices?", "duration": "PT3M06S", "url": "https://open.spotify.com/track/0v04BiUMLaZvtIbOKpvF0D"}},
+      {"@type": "ListItem", "position": 7, "item": {"@type": "MusicRecording", "name": "También Hay Strawberry Fields", "duration": "PT4M20S", "url": "https://open.spotify.com/track/4lwI1RoSz0idhq4KyrDwUB"}},
+      {"@type": "ListItem", "position": 8, "item": {"@type": "MusicRecording", "name": "Balas en el Bar", "duration": "PT3M03S", "url": "https://open.spotify.com/track/3Q4rPIDL3nfDjBZiaD3tNS"}},
+      {"@type": "ListItem", "position": 9, "item": {"@type": "MusicRecording", "name": "Me da Igual", "duration": "PT4M18S", "url": "https://open.spotify.com/track/4QWCiK11yDx2FHCPNv9BQ9"}},
+      {"@type": "ListItem", "position": 10, "item": {"@type": "MusicRecording", "name": "Prefiero", "duration": "PT3M30S", "url": "https://open.spotify.com/track/5ZjMpABed7EVbGqF36YCNG"}},
+      {"@type": "ListItem", "position": 11, "item": {"@type": "MusicRecording", "name": "Mano a Mano", "duration": "PT4M23S", "url": "https://open.spotify.com/track/7JayNnMvyI8IFV64ENDJy5"}},
+      {"@type": "ListItem", "position": 12, "item": {"@type": "MusicRecording", "name": "Quedar Quedan", "duration": "PT5M00S", "url": "https://open.spotify.com/track/2bNfdTMmiu9h1TtC4Djjg3"}}
+    ]
+  }
+}
+</script>
+
+<!-- JSON-LD: FAQPage (invisible, boosts AI visibility 13x) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué es Chau! de Cuatro Cuartos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chau! es el disco de despedida de Cuatro Cuartos (UY) by Gabriel Simonet, lanzado en agosto de 2024. Contiene 12 canciones de rock en español que cierran 27 años de trayectoria de la banda uruguaya. Fue trabajado durante 4 años desde 2020 junto a Gonzalo Angeriz, Max Capote, Hernán Romero, Damián Palacios y Pedro Hordeñana."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Dónde puedo escuchar el álbum Chau! de Cuatro Cuartos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chau! está disponible en todas las plataformas de streaming: Spotify, Apple Music, YouTube Music, Deezer, Tidal, Amazon Music, Anghami y más. Podés escucharlo gratis en Spotify o YouTube Music, o en alta calidad en Tidal y Apple Music."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Quiénes son Cuatro Cuartos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cuatro Cuartos (también escrito Cu4tro Cu4rtos, y a veces Cuatro Cuartos (UY)) es una banda de rock en español de Montevideo, Uruguay, activa desde 1997. Fundada por Gabriel Simonet y Gonzalo Angeriz, la banda fusiona rock con influencias brit, californianas y rioplatenses. Han grabado con músicos como Damián Palacios, Glenn Welman, Jaime González Presto, Nico Nieto, Gonzalo Argenti, Julio Mollá y Popo Romano."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántas canciones tiene el álbum Chau!?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chau! tiene 12 canciones con una duración total de 45 minutos y 47 segundos. Incluye material nuevo y remasters/remixes de 2024 del lineup más estable de la banda: El Disfraz, Llave, No Sé Qué Decir, Los Lunes, El Cancerbero, ¿Qué me dices?, También Hay Strawberry Fields, Balas en el Bar, Me da Igual, Prefiero, Mano a Mano y Quedar Quedan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Quién produjo el álbum Chau!?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Chau! fue producido por Gabriel Simonet con Max Capote, Hernán Romero, Damián Palacios y Pedro Hordeñana. La composición es de Gabriel Simonet y Gonzalo Angeriz. Las guitarras fueron grabadas por Damián Palacios, Jaime González Presto, Nico Nieto, Gonzalo Angeriz, Julio Mollá y Gabriel Simonet, con Glenn Welman y Gonzalo Argenti en batería. La masterización y remix se completaron en 2024."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root {
+  --cream: #F2EDEB;
+  --charcoal: #221F20;
+  --warm-white: #FAF9F7;
+  --muted: #9B9496;
+  --accent: #C53030;
+  --accent-soft: rgba(197, 48, 48, 0.08);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'DM Sans', -apple-system, sans-serif;
+  background: var(--warm-white);
+  color: var(--charcoal);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ═══ HERO ═══ */
+.hero {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: clamp(40px, 8vw, 120px) clamp(20px, 4vw, 80px);
+  position: relative;
+}
+
+.hero-overline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 24px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealUp 0.8s 0.2s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+.hero-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(4rem, 15vw, 12rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.9;
+  color: var(--charcoal);
+  margin-bottom: 32px;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: revealUp 1s 0.4s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+.hero-title span {
+  display: inline-block;
+  color: var(--accent);
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 300;
+  color: var(--muted);
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealUp 0.8s 0.7s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  background: var(--charcoal);
+  color: var(--warm-white);
+  text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: revealUp 0.8s 0.9s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+.hero-cta:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(197, 48, 48, 0.2);
+}
+
+.hero-cta svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s;
+}
+
+.hero-cta:hover svg {
+  transform: translateX(4px);
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: revealUp 0.8s 1.2s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: var(--muted);
+  animation: scrollPulse 2s infinite;
+}
+
+/* ═══ STORY ═══ */
+.story {
+  padding: clamp(80px, 12vw, 160px) clamp(20px, 4vw, 80px);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.story-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+
+.story-text {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--charcoal);
+}
+
+.story-text strong {
+  font-weight: 500;
+}
+
+.story-text strong a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(197, 48, 48, 0.35);
+  text-underline-offset: 5px;
+  transition: color 0.3s, text-decoration-color 0.3s;
+}
+
+.story-text strong a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+.story-text em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+/* ═══ MARQUEE ═══ */
+.marquee-section {
+  padding: 48px 0;
+  overflow: hidden;
+  border-top: 1px solid rgba(34, 31, 32, 0.06);
+  border-bottom: 1px solid rgba(34, 31, 32, 0.06);
+  background: var(--cream);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 64px;
+  animation: marqueeScroll 30s linear infinite;
+  width: max-content;
+}
+
+.marquee-item {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--charcoal);
+  white-space: nowrap;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.marquee-item:hover {
+  opacity: 1;
+}
+
+.marquee-sep {
+  color: var(--accent);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  align-self: center;
+}
+
+/* ═══ TRACKLIST ═══ */
+.tracklist {
+  padding: clamp(80px, 12vw, 160px) clamp(20px, 4vw, 80px);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tracklist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 48px;
+}
+
+.tracklist-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.tracklist-count {
+  font-size: 0.875rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(34, 31, 32, 0.06);
+  transition: all 0.3s;
+  cursor: default;
+}
+
+.track:hover {
+  padding-left: 12px;
+  background: var(--accent-soft);
+  margin: 0 -12px;
+  padding-right: 12px;
+  border-radius: 8px;
+}
+
+.track-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.track-name {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.track-name a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(197, 48, 48, 0.35);
+}
+
+.track-name a:hover {
+  color: var(--accent);
+}
+
+.track-feat {
+  font-size: 0.8125rem;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+.track-duration {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.track-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.track-listen {
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.78;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.track-listen::before {
+  content: "▶";
+  font-size: 0.62rem;
+  margin-right: 6px;
+}
+
+.track-listen:hover {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+/* ═══ NUMBERS ═══ */
+.numbers {
+  padding: clamp(80px, 10vw, 120px) clamp(20px, 4vw, 80px);
+  background: var(--charcoal);
+  color: var(--warm-white);
+}
+
+.numbers-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  gap: 48px;
+}
+
+.number-value {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.number-label {
+  font-size: 0.8125rem;
+  color: rgba(250, 249, 247, 0.5);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ═══ RELEASES ═══ */
+.releases {
+  padding: clamp(80px, 12vw, 150px) clamp(20px, 4vw, 80px);
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.releases-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.releases-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.releases-sub {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.55;
+  max-width: 360px;
+  font-weight: 300;
+}
+
+.release-feature {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: end;
+  padding: 28px 0;
+  border-top: 1px solid rgba(34, 31, 32, 0.14);
+  border-bottom: 1px solid rgba(34, 31, 32, 0.14);
+  margin-bottom: 28px;
+}
+
+.release-kicker,
+.release-meta {
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+}
+
+.release-name {
+  display: block;
+  font-family: 'Syne', sans-serif;
+  color: var(--charcoal);
+  text-decoration: none;
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  margin: 10px 0 14px;
+}
+
+.release-name:hover {
+  color: var(--accent);
+}
+
+.release-desc {
+  max-width: 640px;
+  color: var(--muted);
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+.release-desc a {
+  color: var(--charcoal);
+  text-decoration-color: rgba(197, 48, 48, 0.45);
+  text-underline-offset: 4px;
+}
+
+.release-desc a:hover {
+  color: var(--accent);
+}
+
+.release-action {
+  color: var(--charcoal);
+  text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.82rem;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 4px;
+  white-space: nowrap;
+}
+
+.release-action:hover {
+  color: var(--accent);
+}
+
+.release-groups {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px;
+}
+
+.release-group {
+  border-top: 1px solid rgba(34, 31, 32, 0.08);
+  padding-top: 20px;
+}
+
+.release-group-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.release-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.release-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  align-items: baseline;
+  padding: 13px 0;
+  border-bottom: 1px solid rgba(34, 31, 32, 0.06);
+  color: var(--charcoal);
+  text-decoration: none;
+}
+
+.release-row:hover {
+  color: var(--accent);
+}
+
+.release-row span:first-child {
+  font-weight: 500;
+}
+
+.release-row span:last-child {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ═══ ARCHIVE ═══ */
+.archive-callout {
+  padding: clamp(72px, 10vw, 130px) clamp(20px, 4vw, 80px);
+  background: var(--charcoal);
+  color: var(--warm-white);
+}
+
+.archive-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(32px, 6vw, 72px);
+  align-items: end;
+}
+
+.archive-kicker {
+  color: rgba(250, 249, 247, 0.52);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.archive-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  margin-bottom: 22px;
+}
+
+.archive-text {
+  max-width: 680px;
+  color: rgba(250, 249, 247, 0.68);
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.archive-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 34px;
+  max-width: 560px;
+}
+
+.archive-stat {
+  border-top: 1px solid rgba(250, 249, 247, 0.18);
+  padding-top: 12px;
+}
+
+.archive-stat strong {
+  display: block;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  line-height: 1;
+}
+
+.archive-stat span {
+  display: block;
+  color: rgba(250, 249, 247, 0.5);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.archive-action {
+  color: var(--warm-white);
+  text-decoration: none;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.82rem;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+
+.archive-action:hover {
+  color: var(--accent);
+}
+
+/* ═══ LISTEN ═══ */
+.listen {
+  padding: clamp(80px, 12vw, 160px) clamp(20px, 4vw, 80px);
+  text-align: center;
+}
+
+.listen-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+}
+
+.listen-sub {
+  color: var(--muted);
+  font-size: 1rem;
+  margin-bottom: 48px;
+  font-weight: 300;
+}
+
+.platforms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto 64px;
+}
+
+.platform-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 1px solid rgba(34, 31, 32, 0.12);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--charcoal);
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.3s;
+}
+
+.platform-link:hover {
+  border-color: var(--charcoal);
+  background: var(--charcoal);
+  color: var(--warm-white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(34, 31, 32, 0.1);
+}
+
+/* ═══ CREDITS ═══ */
+.credits {
+  padding: clamp(60px, 8vw, 100px) clamp(20px, 4vw, 80px);
+  background: var(--cream);
+  text-align: center;
+}
+
+.credits-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+
+.credits-text {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.credits-link {
+  display: inline-block;
+  margin-top: 28px;
+  color: var(--charcoal);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: color 0.3s;
+}
+
+.credits-link:hover {
+  color: var(--accent);
+}
+
+/* ═══ FOOTER ═══ */
+.footer {
+  padding: 32px clamp(20px, 4vw, 80px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.footer a {
+  color: var(--charcoal);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: var(--accent);
+}
+
+/* ═══ ANIMATIONS ═══ */
+@keyframes revealUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(1); }
+  50% { opacity: 1; transform: scaleY(1.3); transform-origin: top; }
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Scroll reveals */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ═══ RESPONSIVE ═══ */
+@media (max-width: 768px) {
+  .numbers-grid { grid-template-columns: 1fr; gap: 32px; }
+  .tracklist-header { flex-direction: column; gap: 8px; }
+  .track { grid-template-columns: 32px 1fr auto; padding: 16px 0; }
+  .releases-header { flex-direction: column; align-items: start; }
+  .release-feature { grid-template-columns: 1fr; gap: 20px; }
+  .release-groups { grid-template-columns: 1fr; gap: 34px; }
+  .release-action { justify-self: start; }
+  .archive-inner { grid-template-columns: 1fr; align-items: start; }
+  .archive-stats { grid-template-columns: 1fr; }
+  .archive-action { justify-self: start; }
+  .footer { flex-direction: column; gap: 12px; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-overline">Cuatro Cuartos, despedida by Gabriel Simonet</p>
+  <h1 class="hero-title">Chau<span>!</span></h1>
+  <p class="hero-subtitle">27 años de rock en español. Un toque Brit, un toque californiano, un toque uruguayo. El disco de despedida.</p>
+  <a href="https://gabrielsimonet.ffm.to/chau" target="_blank" rel="noopener" class="hero-cta">
+    Escuchalo ahora
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    scroll
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story reveal">
+  <p class="story-label">La historia</p>
+  <p class="story-text">
+    <strong><a href="https://www.linkedin.com/pulse/decir-chau-es-f%C3%A1cil-gabriel-simonet-rht2f" target="_blank" rel="noopener">Decir "Chau!" no es fácil.</a></strong> Después de casi tres décadas de riffs, canciones y momentos compartidos con amigos y familia, este disco cierra un capítulo enorme. Cuatro Cuartos nunca fue masivo, fue claustrofóbico... pero con estribillos. Décadas de rock entre amigos, sin demasiadas preocupaciones ni objetivos claros, salvo seguir cantando canciones juntos.
+  </p>
+  <br>
+  <p class="story-text">
+    <em>Chau!</em> es despedida y celebración al mismo tiempo. Cuatro años de trabajo desde 2020, con Goz (como siempre, la fe), sumando a Max Capote, Hernán Romero y Damián Palacios para darle forma al último disco de rock de la banda. Doce canciones: dos tercios material nuevo, un tercio remixes y remasters de nuestros clásicos, con los Cuartos clásicos: Angeriz, Argenti, Mollá y Simonet. Un adiós que suena a lo que fuimos y a lo que podíamos ser.
+  </p>
+</section>
+
+<!-- MARQUEE -->
+<section class="marquee-section">
+  <div class="marquee-track">
+    <span class="marquee-item">El Disfraz</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Llave</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">No Sé Qué Decir</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Los Lunes</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">El Cancerbero</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">¿Qué me dices?</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Strawberry Fields</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Balas en el Bar</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Me da Igual</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Prefiero</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Mano a Mano</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Quedar Quedan</span><span class="marquee-sep">/</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="marquee-item">El Disfraz</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Llave</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">No Sé Qué Decir</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Los Lunes</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">El Cancerbero</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">¿Qué me dices?</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Strawberry Fields</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Balas en el Bar</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Me da Igual</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Prefiero</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Mano a Mano</span><span class="marquee-sep">/</span>
+    <span class="marquee-item">Quedar Quedan</span><span class="marquee-sep">/</span>
+  </div>
+</section>
+
+<!-- TRACKLIST -->
+<section class="tracklist reveal">
+  <div class="tracklist-header">
+    <h2 class="tracklist-title">Tracklist</h2>
+    <span class="tracklist-count">12 canciones / 45:47</span>
+  </div>
+
+  <div class="track">
+    <span class="track-num">01</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/3fyXjhQil9doxBwJmBY8tj" target="_blank" rel="noopener">El Disfraz</a></span>
+      <span class="track-feat">feat. Max Capote, Hernán Romero & Damián Palacios</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/3fyXjhQil9doxBwJmBY8tj" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">3:29</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">02</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/3kCN45lig3rqY4NgYDGxsf" target="_blank" rel="noopener">Llave</a></span>
+      <span class="track-feat">feat. Damián Palacios, Gabriel Simonet & Hernán Romero</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/3kCN45lig3rqY4NgYDGxsf" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">2:53</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">03</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/5enHL72ocupOAU1Tb0KyIE" target="_blank" rel="noopener">No Sé Qué Decir</a></span>
+      <span class="track-feat">&nbsp;</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/5enHL72ocupOAU1Tb0KyIE" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">3:52</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">04</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/3hzcVZCqVtKcbU8ydpLjAY" target="_blank" rel="noopener">Los Lunes</a></span>
+      <span class="track-feat">feat. Damián Palacios</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/3hzcVZCqVtKcbU8ydpLjAY" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">5:00</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">05</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/1eEfraIqEpx7VjNGrlDUeB" target="_blank" rel="noopener">El Cancerbero</a></span>
+      <span class="track-feat">feat. Gabriel Simonet & Jaime González Presto</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/1eEfraIqEpx7VjNGrlDUeB" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">2:53</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">06</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/0v04BiUMLaZvtIbOKpvF0D" target="_blank" rel="noopener">¿Qué me dices?</a></span>
+      <span class="track-feat">feat. Damián Palacios</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/0v04BiUMLaZvtIbOKpvF0D" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">3:06</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">07</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/4lwI1RoSz0idhq4KyrDwUB" target="_blank" rel="noopener">También Hay Strawberry Fields</a></span>
+      <span class="track-feat">feat. Gabriel Simonet & Damián Palacios</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/4lwI1RoSz0idhq4KyrDwUB" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">4:20</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">08</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/3Q4rPIDL3nfDjBZiaD3tNS" target="_blank" rel="noopener">Balas en el Bar</a></span>
+      <span class="track-feat">feat. Damián Palacios & Popo Romano</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/3Q4rPIDL3nfDjBZiaD3tNS" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">3:03</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">09</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/4QWCiK11yDx2FHCPNv9BQ9" target="_blank" rel="noopener">Me da Igual</a></span>
+      <span class="track-feat">&nbsp;</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/4QWCiK11yDx2FHCPNv9BQ9" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">4:18</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">10</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/5ZjMpABed7EVbGqF36YCNG" target="_blank" rel="noopener">Prefiero</a></span>
+      <span class="track-feat">&nbsp;</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/5ZjMpABed7EVbGqF36YCNG" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">3:30</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">11</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/7JayNnMvyI8IFV64ENDJy5" target="_blank" rel="noopener">Mano a Mano</a></span>
+      <span class="track-feat">&nbsp;</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/7JayNnMvyI8IFV64ENDJy5" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">4:23</span>
+    </div>
+  </div>
+  <div class="track">
+    <span class="track-num">12</span>
+    <div class="track-info">
+      <span class="track-name"><a href="https://open.spotify.com/track/2bNfdTMmiu9h1TtC4Djjg3" target="_blank" rel="noopener">Quedar Quedan</a></span>
+      <span class="track-feat">&nbsp;</span>
+    </div>
+    <div class="track-actions">
+      <a class="track-listen" href="https://open.spotify.com/track/2bNfdTMmiu9h1TtC4Djjg3" target="_blank" rel="noopener" aria-label="Escuchar este tema en Spotify">Escuchar</a>
+      <span class="track-duration">5:00</span>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="numbers reveal">
+  <h2 class="listen-title numbers-title">El disco de despedida, en números</h2>
+  <div class="numbers-grid">
+    <div>
+      <div class="number-value">27</div>
+      <div class="number-label">Años de rock</div>
+    </div>
+    <div>
+      <div class="number-value">12</div>
+      <div class="number-label">Canciones</div>
+    </div>
+    <div>
+      <div class="number-value">4</div>
+      <div class="number-label">Años grabando</div>
+    </div>
+  </div>
+</section>
+
+<!-- RELEASES -->
+<section class="releases reveal">
+  <div class="releases-header">
+    <h2 class="releases-title">También escuchá</h2>
+    <p class="releases-sub">Singles, EPs y canciones que fueron marcando el camino hasta <em>Chau!</em>.</p>
+  </div>
+
+  <div class="release-feature">
+    <div>
+      <p class="release-kicker">Un muy esperado tercer EP</p>
+      <a class="release-name" href="https://open.spotify.com/album/6cm42m4UMtYq6UpS26VTVk" target="_blank" rel="noopener">Balas en el Bar</a>
+      <p class="release-desc">Cuatro canciones del tramo final, con parte del sonido y la energía que después terminan de cerrar en <em>Chau!</em>.</p>
+    </div>
+    <a class="release-action" href="https://open.spotify.com/album/6cm42m4UMtYq6UpS26VTVk" target="_blank" rel="noopener">Escuchar EP</a>
+  </div>
+
+  <div class="release-groups">
+    <div class="release-group">
+      <h3 class="release-group-title">Singles</h3>
+      <div class="release-list">
+        <a class="release-row" href="https://open.spotify.com/album/1SVeuC1T8KDOfhRaYbYDWo" target="_blank" rel="noopener"><span>El Disfraz</span><span>Sencillo</span></a>
+        <a class="release-row" href="https://open.spotify.com/album/1dlvvhBrfKwAvpmNBRcd8G" target="_blank" rel="noopener"><span>No Sé Qué Decir</span><span>Sencillo</span></a>
+        <a class="release-row" href="https://open.spotify.com/album/0gP9M5Co4fB9vh0Jf9OZkH" target="_blank" rel="noopener"><span>El Cancerbero</span><span>Sencillo</span></a>
+        <a class="release-row" href="https://open.spotify.com/album/31emrUvnCBsaL1UO9xmKeh" target="_blank" rel="noopener"><span>Llave</span><span>Sencillo</span></a>
+        <a class="release-row" href="https://open.spotify.com/album/54iLe3HMSNRXqe6EJzUWX5" target="_blank" rel="noopener"><span>También Hay Strawberry Fields</span><span>Sencillo</span></a>
+        <a class="release-row" href="https://open.spotify.com/album/1yuguGU13dKFnYSJZ7V1Zv" target="_blank" rel="noopener"><span>Los Lunes</span><span>Sencillo</span></a>
+      </div>
+    </div>
+
+    <div class="release-group">
+      <h3 class="release-group-title">EPs</h3>
+      <div class="release-list">
+        <a class="release-row" href="https://open.spotify.com/album/6cm42m4UMtYq6UpS26VTVk" target="_blank" rel="noopener"><span>Balas en el Bar</span><span>EP</span></a>
+        <a class="release-row" href="https://open.spotify.com/album/7kCWHH25gnPwmqWSfDMu3j" target="_blank" rel="noopener"><span>Quedar Quedan</span><span>EP</span></a>
+        <a class="release-row" href="https://open.spotify.com/album/2mac8ame92jSEjk7Hf3KRB" target="_blank" rel="noopener"><span>Me da Igual</span><span>EP</span></a>
+        <a class="release-row" href="/archivo/2008/07/27/descargar-la-ltima-funcin-de-cuatro/index.html"><span>Última Función</span><span>EP Prohibido</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARCHIVE -->
+<section class="archive-callout reveal">
+  <div class="archive-inner">
+    <div>
+      <p class="archive-kicker">Archivo histórico</p>
+      <h2 class="archive-title">Antes de Chau!</h2>
+      <p class="archive-text">
+        También estamos reconstruyendo el sitio viejo de Cuatro Cuartos: posts, fotos, descargas reconducidas a Spotify, rarezas y URLs históricas preservadas. El archivo vive aparte, con el mismo tono simple de esta landing.
+      </p>
+      <div class="archive-stats" aria-label="Resumen del archivo histórico">
+        <div class="archive-stat"><strong>108</strong><span>textos recuperados</span></div>
+        <div class="archive-stat"><strong>1996</strong><span>primeras rutas</span></div>
+        <div class="archive-stat"><strong>1</strong><span>archivo paralelo</span></div>
+      </div>
+    </div>
+    <a class="archive-action" href="/archivo/index.html">Entrar al archivo</a>
+  </div>
+</section>
+
+<!-- LISTEN -->
+<section class="listen reveal">
+  <h2 class="listen-title">Escuchalo</h2>
+  <p class="listen-sub">Disponible en todas las plataformas</p>
+  <div class="platforms">
+    <a href="https://open.spotify.com/album/5xgDA33p8W2cYK9o3SNgDA" target="_blank" rel="noopener" class="platform-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+      Spotify
+    </a>
+    <a href="https://music.apple.com/us/album/chau/1756747961" target="_blank" rel="noopener" class="platform-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      Apple Music
+    </a>
+    <a href="https://music.youtube.com/playlist?list=OLAK5uuy_kqOwYw_NgyGpUBeO_lO0XXj2AWTFw3W4SE" target="_blank" rel="noopener" class="platform-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      YouTube Music
+    </a>
+    <a href="https://www.deezer.com/album/614134332" target="_blank" rel="noopener" class="platform-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 17.466l-1.098-.009c-.285 0-.57-.182-.57-.473l-.006-5.298c0-.164.037-.464-.39-.464-.42 0-.435.3-.435.464v5.298c0 .291-.285.473-.57.473l-1.098.009c-.285 0-.57-.182-.57-.473l-.006-5.298c0-.164.037-.464-.39-.464-.42 0-.435.3-.435.464v5.298c0 .291-.285.473-.57.473l-1.098.009c-.285 0-.57-.182-.57-.473V7.007c0-.291.285-.473.57-.473l1.098.009c.285 0 .57.182.57.473v.498a2.036 2.036 0 0 1 1.461-.587c.659 0 1.19.324 1.461.866a2.036 2.036 0 0 1 1.461-.866c1.068 0 1.461.758 1.461 1.656v7.41c0 .291-.285.473-.57.473z"/></svg>
+      Deezer
+    </a>
+    <a href="https://tidal.com/album/374666119" target="_blank" rel="noopener" class="platform-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 3.992L8.008 7.996 4.004 3.992 0 7.996v8.008l4.004 4.004 4.004-4.004 4.004 4.004 4.004-4.004 4.004 4.004L24 15.996V7.996l-3.996-4.004-4.004 4.004-3.988-4.004z"/></svg>
+      Tidal
+    </a>
+  </div>
+  <a href="https://gabrielsimonet.ffm.to/chau" target="_blank" rel="noopener" style="color:var(--muted);font-size:0.875rem;text-decoration:underline;text-underline-offset:4px;">
+    Ver todas las plataformas
+  </a>
+</section>
+
+<!-- CREDITS -->
+<section class="credits reveal">
+  <h3 class="credits-title">Créditos Chau!</h3>
+  <p class="credits-text">
+    Composición: Gabriel Simonet & Gonzalo Angeriz<br>
+    Guitarras: Damián Palacios, Jaime González Presto, Nico Nieto, Gonzalo Angeriz, Julio Mollá, Gabriel Simonet<br>
+    Batería: Glenn Welman, Gonzalo Argenti<br>
+    Producción: Gabriel Simonet con Max Capote, Hernán Romero, Damián Palacios y Pedro Hordeñana<br>
+    Masterización & Remix: 2024
+  </p>
+  <a class="credits-link" href="creditos-chau/index.html">Ver créditos por tema</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <span>Cuatro Cuartos — Montevideo, Uruguay</span>
+  <div style="display:flex;gap:24px;">
+    <a href="https://twitter.com/cuatro_cuartos" target="_blank" rel="noopener">Twitter/X</a>
+    <a href="https://www.facebook.com/cuatrocuartos.uy" target="_blank" rel="noopener">Facebook</a>
+    <a href="creditos-chau/index.html">Créditos Chau!</a>
+    <a href="/archivo/index.html">Archivo</a>
+    <a href="https://www.linkedin.com/pulse/decir-chau-es-f%C3%A1cil-gabriel-simonet-rht2f" target="_blank" rel="noopener">La Historia</a>
+    <a href="https://gabrielsimonet.ffm.to/chau" target="_blank" rel="noopener">Escuchar</a>
+  </div>
+</footer>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

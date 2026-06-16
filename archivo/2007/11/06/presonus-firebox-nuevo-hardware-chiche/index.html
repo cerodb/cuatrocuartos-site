@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Presonus FireBox - Nuevo Hardware (Chiche) — Archivo Cuatro Cuartos</title>
+<meta name="description" content="Presonus FireBox - Nuevo Hardware (Chiche)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/archivo/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2007-11-06 / post</div>
+      <h1>Presonus FireBox - Nuevo Hardware (Chiche)</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2007/11/06/presonus-firebox-nuevo-hardware-chiche/</p>
+    </header>
+    <h2>Presonus FireBox - Nuevo Hardware (Chiche)</h2>
+<blockquote><a href="http://lh5.google.com/cuatrocuartos/RzXm-3iU4iI/AAAAAAAAACs/7-FVpsk-2EI/composicion.jpg?imgmax=512"><img src="http://lh5.google.com/cuatrocuartos/RzXm-3iU4iI/AAAAAAAAACs/7-FVpsk-2EI/composicion.jpg?imgmax=512" alt="" loading="lazy"></a></blockquote>
+<blockquote>Escuchar los temas <a href="/archivo/2009/05/22/grabado-con-presonus-firebox/">producidos con la Presonus Firebox</a>.</blockquote>
+<p>Nuevo chiche para Cuatro Cuartos: La FireBox de Presonus: Una pequeña Interfaz de Grabación por FireWire de cuatro canales que nos permitirá hacer estragos con comodidad y soltura! Algunos datos para los más curiosos. _____________ La Firebox de Presonus es una poderosísima interfaz de grabación FireWire sumamente compacta y portátil. La Firebox es un estudio de grabación a 24-Bits y 96k de muestreo. Incluye un completo Pack de Grabación, a través del software de grabación y edición Cubase LE de 48 canales de Steinberg, tanto para PC como para Mac. Es una solución de hardware y software perfecta para un estudio móvil de grabación o un estudio compacto pero profesional. \- Conversores de Análogo a Digital de alta calidad (Rango dinámico 110 dB) \- Preamplificadores de micrófono Class-A \- Amplísima respuesta de frecuencia que va de los 10 Hz a los 50 kHz \- Construcción sólida y resistente a los usuarios más guerreros (de verdad) Hardware La FireBox permite grabar hasta seis canales simultáneamente a través de: \- 2 entradas Neutrik de micrófono/línea (balanceadas) con 48V de phantom power \- 2 entradas de línea (balanceadas) que permiten entradas de premezclas por consolas \- 2 entradas S/PDIF (señal previamente digitalizada) A su vez permite (sí, simultáneamente con la grabación) hasta 10 salidas de audio a través de: \- 2 salidas master \- 4 salidas de línea \- 2 canales S/PDIF \- 2 salidas extra a través de la potentísima salida de auriculares La FireBox puede ser alimentada de energía a través del FireWire de seis pins (IEEE 1394) pero también puede ser utilizada con un FireWire de 4 pins, puesto que viene con una alimentación y transformador independientes. La FireBox es compatible con Windows XP y Macintosh (recientemente liberaron también los drivers para Windows Vista) y viene con una solución de software de grabación completa a través del Cubase LE para aquellos que no dispongan de una aún. También es compatible con otras aplicaciones basadas en ASIO/WDM y Core Adio, como son Logic, Sonar, Audition, Digital Performer entre otros. DSP Mixer Incluído La FireBox viene con un DSP mixer de cero latencia, que permite mezclar en el aire las seis entradas con un stream de software, rutear la mezcla a cualquiera de las salidas, como también permite asignar dicha mezcla o la salida de software a los amplificadores de los auriculares. De esta manera se elimina el monitoreo a través de la computadora y se permite ajustar las mezclas en función de las necesidades (sean toques en vivo o mezclas de grabaciones). ProPak Software Suite Esta interfaz FireWire de audio viene con el ProPak Software Suite que otorga Presonus con sus equipos, que incluye, además del Cubase LE para Mac y PC, más de 20 plug-ins, algunos instrumentos virtuales y más de 2 GB de Loops de baterías y Samples. Resumen de Características: \- Interfaz de audio FireWire de alta velocidad (Plug and Play) \- Muestreo a 24-Bit / 44.1, 48, 88.2, 96K \- Grabación/Reproducción a través de 6 entradas/10 salidas a 24-bit/96K simultáneas (dependiendo de la potencia del PC/Mac en el que corra, por supuesto) \- 2 entradas con preamplificadores PreSonus de microfonos e instrumentos \- 2 entradas análogas de línea y 6 salidas de audio análogas \- S/PDIF input/output \- MIDI input/output \- Monitoreo de baja Latencia \- Salida de auriculares independiente \- Alimentado a través de FireWire o Transformador independiente \- Software de Mezcladora y Ruteadora \- Compatible con Windows y Macintosh \- Inlcuye el ProPak Software Suite que trae el Cubase LE Audio Production Software de Steinberg. Reviews del producto: \- Sound on Sound, Julio 2005 http://www.presonus.com/pdf/SOSFIREBOX.pdf \- Macmusic.org, Junio 2005 http://www.macmusic.org/articles/view.php?id=95 \- Digital Producer Magazine, Febrero 2006 http://www.digitalproducer.com/articles/viewarticle.jsp?id=37473-0 Requerimientos: Macintosh • OS: MacOS X ver. 10.3.7 o posterior • CPU/Clock: PowerPC G4/800Mhz o superior (G4/Dual 1 GHz recomendado), todos los modelos Intel/Mac • Memoria (RAM): 256 MB (512MB recomendados) Windows • OS: Microsoft Windows XP • Computer: PC Windows compatible con IEEE 1394 FireWire port. • CPU/Clock: Pentium, Athlon de 900Mhz o superior (1.5GHz recomendado) • Memoria (RAM): 256 MB (512MB recomendada) Más datos en: http://www.presonus.com/compatibility.html Otras Especificaciones técnicas: Preamp Bandwidth: 10Hz to 50kHz Preamp Input Impedance: 1.3k Ohms Instrument Input Impedance: 1M Ohms Preamp THD: &lt;0.005% Preamp EIN: -125dB Preamp Gain: 45dB (+12dB digital boost switch) Line Input Impedance: 10k Ohms TRS Output Impedance: 51 Ohms TRS Main Outputs: Impedance 51 Ohms Headphone Output: 150mW/Ch 20Hz-20kHz Phantom Power: 48V +/- 2V Power Supply: Ext line Transformer, Internal Switching Bus Power: Six-pin FireWire Port Analog to Digital Converters: 24-bit / up to 96khz ADC Dynamic Range: 107dB DAC: 24-bit / up to 96kHz DAC Dynamic Range: 110dB IEEE1394 Speed: 400mbps Información del Fabricante: http://www.presonus.com http://www.presonus.com/firebox.html</p>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

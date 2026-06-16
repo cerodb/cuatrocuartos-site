@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Leyenda bizarra de Cu4tro Cu4rtos — Archivo Cuatro Cuartos</title>
+<meta name="description" content="Leyenda bizarra de Cu4tro Cu4rtos">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/archivo/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">1997-11-17 / post</div>
+      <h1>Leyenda bizarra de Cu4tro Cu4rtos</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/1997/11/17/leyenda-bizarra-de-cu4tro-cu4rtos/</p>
+    </header>
+    <h2>Leyenda bizarra de Cu4tro Cu4rtos</h2>
+<p>A diferencia de otras leyendas que sitúan en tiempos lejanos el origen de la emblemática banda, existe, como siempre sucede con estas cosas, una versión completamente distinta, sin duda la más bizarra de todas (pero no por ello indigna de atención), cuyos puntos de coincidencia con el resto de las historias son nulos, cosa que no hace más que alimentar las innumerables especulaciones en torno a los comienzos del famoso combo musical.</p>
+<p>Según esta versión, los “Fan five” (“Fantastic five”) habrían tenido sus orígenes en los pasillos de una Universidad de la capital de un pequeño país al este de un continente olvidado, a fines (y no mediados) del siglo XX.</p>
+<p>Entre los diversos cursos y seminarios dictados en la mencionada casa del saber, estaba el de "Acondicionamiento térmico para la conservación de insectos y humanos famosos con pires de inmortalidad", al que asistía con regularidad Pablo Semanas. Semanas era un gran estudioso de la biología molecular, la antropología filosófica, la cultura hindú y las revistas del Pato Donald, de las que poseía prácticamente todo ejemplar editado.</p>
+<p>En el aula contigua al curso de "Acondicionamiento ... ", se realizaban las prácticas del seminario de "Cálculo de números irracionales mediante métodos poco razonables", prácticas que generalmente terminaban en grandes trifulcas, en virtud de que, como el nombre de la temática lo indica, los participantes del seminario hacían a un lado todo vestigio de raciocinio al asistir a dichos prácticos. Más de una vez, las grescas acababan en los pasillos, molestando con el ruido a los participantes del curso de "Acondicionamiento... " del salón vecino.</p>
+<p>Y fue durante una de esas memorables bataholas (la más memorable de todas tal vez) que se conocieron Pablo Semanas (que había salido al pasillo en esos momentos a fumar uno de sus "populares" cigarros, alegando la imposibilidad de concentrarse en la clase con tanto ruido) y Gab Zimmonet, participante del seminario de "Cálculo... " que intentaba defenderse de un feroz ataque con una regla T (más adelante, la Universidad agregaría a su Reglamento una cláusula que imposibilitaba a los estudiantes el ingreso a las instalaciones portando reglas T, medida que contribuyó a que el número de traumatismos de cráneo durante períodos de clase disminuyera casi a cero, y llevó a la quiebra a los propietarios de varios locales de venta de artículos de dibujo de la zona).</p>
+<p>Luego de un breve intercambio de improperios, producto del acalorado momento que ambos vivían (Zimmonet estaba fuera de sí como consecuencia de los golpes recibidos en la trifulca y Semanas estaba molesto a causa de un insecto volador que, habiendo escapado del aula, se posaba constantemente en su cigarrillo), el entendimiento se abrió paso entre los dos jóvenes, dando lugar al primer diálogo sensato entre estos dos futuros miembros de Cu4tro Cu4rtos (decimos "sensato", porque, como se explicó anteriormente, lo primero que en realidad intercambiaron estos dos personajes fueron agraviantes opiniones acerca de sus progenitores, futuros descendientes y elementos aledaños de sus árboles genealógicos).</p>
+<p>Chules Mölla era un viejo amigo de Gab Zimmonet. Ambos se habían conocido durante jornadas organizadas por la "Asociación de amigos del Mi Mayor", asociación de la cual ambos eran miembros ilustres. Tanto Mölla como Zimmonet habían dedicado mucho tiempo a la experimentación con diversas formas del acorde, habiendo logrado un profundo conocimiento de su correcta integración en los pasajes más inverosímiles de distintos estilos de música (Zimmonet había incluso sido premiado por su trabajo "Mi Mayor: una alternativa al bongó", obra revolucionaria que, además de difundir el uso del fantástico acorde, despertaría las críticas de varias asociaciones de percusionistas profesionales, que vieron en ella una amenaza a sus fuentes de trabajo).</p>
+<p>Zimmonet y Mölla habían tenido además experiencias musicales conjuntas, pero nunca con el éxito alcanzado por sus varios y renombrados trabajos teóricos acerca del Mi Mayor. Conformaron durante muchos años un dúo llamado "Los re-menores" (haciendo alusión a su en aquellos tiempos corta edad), que recorrió diversos pubs, fiestas privadas y boliches de mala muerte sin mayor repercusión en el show-biz de su pequeño país. Algunos justifican el fracaso de la desconocida formación en el hecho de que los temas que interpretaban eran muchas veces inadecuados para el público y los lugares a los que asistían. Ambos músicos a menudo recuerdan (y se arrepienten de) la ocasión en que en una reunión anual de veteranos argentinos de la guerra de las Malvinas a la que fueron invitados, ejecutaron con vehemencia un popurrí de canciónes de los Beatles, episodio que culminó para los veteranos en la secciónal policial, y para Zimmonet y Mölla en un largo período de internación en el pabellón de cuidados intensivos de un prestigioso sanatorio local.</p>
+<p>A medida que Semanas y Zimmonet fueron profundizando en su amistad, se percataron de que gustaban de estilos musicales similares, y comenzaron a incursionar juntos en el difícil arte de la composición y el arreglo de temas. En ocasión en que se encontraban en los pasillos de la Universidad interpretando una particular versión del conocido tema “Twist n’ shut up”, Mölla, que pasaba a saludar a su amigo Zimmonet, se les unió tocando una cítara que casualmente llevaba y haciendo además coros, despertando la ovación de los que tuvieron la oportunidad de escucharlos (que no fueron muchos, ya que las interpretaciones en los pasillos se caracterizaban por su moderado volumen, y sobre todo en temas como “Twist n’ shut up”, que ejecutaban con una delicadeza asombrosa). A partir de ese momento, Mölla se unió a las sesiones de composición de Zimmonet y Semanas, quedando así conformados los cimientos de lo que tiempo después sería Cu4tro Cu4rtos.</p>
+<p>Faltaba poco para que aquel singular trío se convirtiera en una verdadera banda de rock n’ roll (aunque algunos críticos alegan que aún hoy les falta mucho, y dudan seriamente que puedan recibir ese título de futuro).</p>
+<p>La última etapa de la formación del legendario grupo está marcada por la incorporación efectiva de Jorge del Gran-Balde y Freddy Pazos, otros dos alumnos del pródigo templo del saber (templo al que algunos llaman hoy “El semillero”, y otros, disidentes de Cu4tro Cu4rtos, intentan clausurar por todos los medios, de forma de evitar hechos similares en el futuro).</p>
+<p>Jorge del Gran-Balde era aficionado a la observación de aves, habiendo desarrollado a partir de ello un particular sentido melódico, ya que afirmaba que la disposición de los pájaros en los cables de alta tensión podía ser interpretada como una partitura. Esta particular forma de ver las cosas, lo llevó a sufrir durante muchos años de agudas tortícolis, producto de la gran cantidad de horas que pasaba mirando las aves que se posaban en líneas eléctricas. La influencia de esta molesta dolencia en la música de del Gran-Balde se hace evidente en su conocido tema “No puedo verte a los ojos”, en donde el autor cuenta con gran elocuencia el sufrimiento que le causaba la imposibilidad de bajar su mirada para ver a su amada a los ojos y decirle cuánto la quería.</p>
+<p>Freddy Pazos, en cambio, gustaba principalmente del dibujo, y su increíble sentido rítmico provenía de las largas sesiones de tamborileo que había presenciado accidentalmente mientras trataba de plasmar en papel la pintoresca arquitectura del “Barrio Sur” de su ciudad natal, que era por lejos su obsesión. Luego de dos años acudiendo a diario al mismo lugar con la esperanza de no ser interrumpido por los tamboriles y poder terminar al menos un dibujo, Freddy decidió abandonar la que hasta ese momento había sido su principal afición, uniéndose a una banda de mulatos en la que hizo muestra de toda la experiencia rítmica que por pura casualidad había adquirido. Aún hoy, durante las populares celebraciones de Carnaval, Freddy desfila con la agrupación “Bocetos mulatos”, nombre que hace alusión a la actividad que inicialmente lo vinculó a esta forma de arte.</p>
+<p>A partir de las dos nuevas incorporaciones, y pese a la fuerte oposición de algunas personas de pensamiento poco abierto que residían en el vecindario de Zimmonet, la banda comenzó sus ensayos formales, que se realizaban sin excepción durante las cuatro primeros cuartos de hora de la tarde de cada 29 de Febrero. Los resultados de los ensayos no demoraron en hacerse notar, y los “Fan Five” hicieron su primera aparición pública en el conocido pub “La Negra María”, donde ejecutaron durante aproximadamente 25 minutos algunos de sus temas, dejando boquiabiertos a los presentes y desatando así la Cu4rto-manía (existen, sin embargo, quienes afirman que en realidad los presentes quedaron con la boca abierta no como consecuencia de la música de la banda, sino a raíz del excesivo picante que contenían los bocadillos que se sirvieron durante los escasos minutos que duró la primera presentación oficial de Cu4tro Cu4rtos).</p>
+<p>Esa presentación fue también la última para Jorge del Gran-Balde, que huyó despavorido del país poco tiempo después, como forma de evadir el asedio permanente de un grupo de fans de la banda. Se afirma que Jorge se encuentra en estos momentos en un lujoso iglú cercano al polo norte, siguiendo atentamente vía Internet la trayectoria del grupo y planeando su regreso, que se producirá en cuanto pueda dejar resueltas algunas diferencias de territorio con un grupo de antipáticos osos polares que se sintieron invadidos por la construcción del iglú, y montan guardia desde entonces frente a la propiedad del músico, con la intención de darle un escarmiento ni bien se asome a la puerta.</p>
+<p>En una de sus tantas erráticas caminatas por los pasillos de la Universidad a la que aún concurría a pesar de su exitosa carrera musical, Gab Zimmonet se cruzó con un muchacho que afirmaba tener algo azul bajo el brazo. Luego de observarlo atentamente y constatar que la frase era completamente simbólica, Zimmonet, impresionado por lo profundo, complejo, delirante y misterioso de la afirmación, lo invitó a realizar una prueba para ingresar a la banda, en el convencimiento de que alguien así podría aportar nuevas ideas al grupo.</p>
+<p>El misterioso personaje se llamaba Goz Angels, y luego de una serie de ensayos se confirmó su incorporación a la formación del prestigioso conjunto, a pesar de que hay comentarios de que poco tiempo después, el resto de los integrantes de Cu4tro Cu4rtos no se explicaban cómo habían dejado que tal cosa sucediera. Incluso se dice que algunos de ellos dedicaron varios años al estudio de la teoría de la relatividad, con el objetivo de aplicar sus conocimientos al desarrollo de una máquina del tiempo que pudiera regresarlos al momento de tan infortunada decisión.</p>
+<p>Con la nueva formación (Semanas, Zimmonet, Mölla, Pazos y Angels), la banda volvió a los escenarios y siguió cosechando éxitos, millones y tomates (tanto es así que, la actividad secundaria de todos sus miembros hoy en día, es la venta en el Mercado Modelo de este delicioso fruto de la tierra), situación que se mantiene invariable hasta el día de hoy.</p>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Nuestro dominio volvió a nosotros!! — Archivo Cuatro Cuartos</title>
+<meta name="description" content="Nuestro dominio volvió a nosotros!!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/archivo/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2009-02-27 / post</div>
+      <h1>Nuestro dominio volvió a nosotros!!</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2009/02/27/nuestro-dominio-volvio-a-nosotros/</p>
+    </header>
+    <h2>Nuestro dominio volvió a nosotros!!</h2>
+<p>Finalmente, luego de casi 8 años, <a href="https://cuatrocuartos.com/">www.cuatrocuartos.com</a> vuelve a nosotros! Entre 1998 y 1999, Cuatro Cuartos había tenido bajo su control el dominio que lleva su nombre. Había sido sin poner un peso, gracias a los emprendimientos que daban cosas gratis (en este caso dominios), a cambio de publicidad. Como muchos otros proyectos sin sentido (si alguien no tiene dinero para comprar un dominio, difícilmente tenga público que clickee la publicidad), la empresa que nos daba el dominio se fundió y al no contar con medios para comprar el dominio, lo perdimos. Pasaron algunos años y el dominio pasó por muchas manos, pero siempre quisimos recuperarlo infructuosamente... Hoy estaba en esas visitas nostálgicas al pasado e inesperadamente veo que el dominio está diponible de nuevo... y bueno... le caimos con las dos patas.</p>
+<blockquote><strong><a href="https://cuatrocuartos.com/">CuatroCuartos.com</a>, our home is home again! </strong> Estamos configurándolo para ustedes, mientras tanto pueden bajar, escuchar y difundir (sin pagar un mango) el último disco de la banda "<a href="/archivo/2008/07/30/me-da-igual-ep2-2008/">Me Da Igual</a>".</blockquote>
+<p>_<strong>A raíz de este cambio hemos discontinuado el uso del dominio www.rockontherocks.com, pero seguimos conservándolo por razones sentimentales.</strong>_</p>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

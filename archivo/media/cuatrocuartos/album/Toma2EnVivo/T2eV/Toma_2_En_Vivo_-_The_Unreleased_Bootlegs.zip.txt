@@ -1,0 +1,9 @@
+Archivo grande excluido del repositorio Git.
+
+Nombre original: Toma_2_En_Vivo_-_The_Unreleased_Bootlegs.zip
+Tamaño aproximado: 147.2 MB
+Ruta original dentro del proyecto: site/archivo/media/cuatrocuartos/album/Toma2EnVivo/T2eV/Toma_2_En_Vivo_-_The_Unreleased_Bootlegs.zip
+Copia local movida a: _large-files-excluded/site/archivo/media/cuatrocuartos/album/Toma2EnVivo/T2eV/Toma_2_En_Vivo_-_The_Unreleased_Bootlegs.zip
+Respaldo externo: disco de respaldo de Gabriel.
+
+Para restaurar, copiar este archivo desde el respaldo o desde _large-files-excluded/ a la ruta original.

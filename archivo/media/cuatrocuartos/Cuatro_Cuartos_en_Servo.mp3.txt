@@ -1,0 +1,9 @@
+Archivo grande excluido del repositorio Git.
+
+Nombre original: Cuatro_Cuartos_en_Servo.mp3
+Tamano aproximado: 9.3 MB
+Ruta original dentro del proyecto: site/archivo/media/cuatrocuartos/Cuatro_Cuartos_en_Servo.mp3
+Copia local movida a: _large-files-excluded/site/archivo/media/cuatrocuartos/Cuatro_Cuartos_en_Servo.mp3
+Respaldo externo: disco de respaldo de Gabriel.
+
+Para restaurar, copiar este archivo desde el respaldo o desde _large-files-excluded/ a la ruta original.

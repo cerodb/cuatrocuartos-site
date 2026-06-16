@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Créditos Chau! — Cuatro Cuartos</title>
+<meta name="description" content="Las voces, las guitarras, el sudor y las manos que hicieron posible las canciones del disco de despedida de Cuatro Cuartos.">
+<link rel="canonical" href="https://cuatrocuartos.com/creditos-chau/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Cuatro Cuartos">
+<meta property="og:title" content="Créditos Chau! — Cuatro Cuartos">
+<meta property="og:description" content="Las voces, las guitarras, el sudor y las manos que hicieron posible las canciones del disco de despedida de Cuatro Cuartos.">
+<meta property="og:type" content="music.album">
+<meta property="og:url" content="https://cuatrocuartos.com/creditos-chau/">
+<meta property="og:site_name" content="Cuatro Cuartos">
+<meta property="og:locale" content="es_UY">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@cuatro_cuartos">
+<meta name="twitter:title" content="Créditos Chau! — Cuatro Cuartos">
+<meta name="twitter:description" content="Las voces, las guitarras, el sudor y las manos que hicieron posible Chau!.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MusicAlbum",
+  "name": "Chau!",
+  "url": "https://cuatrocuartos.com/creditos-chau/",
+  "byArtist": {
+    "@type": "MusicGroup",
+    "name": "Cuatro Cuartos",
+    "alternateName": ["Cu4tro Cu4rtos", "Cuatro Cuartos (UY)"]
+  },
+  "creditText": "Créditos por tema de Chau!: composición, voces, guitarras, bajo, batería, teclados y producción."
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root {
+  --cream: #F2EDEB;
+  --charcoal: #221F20;
+  --warm-white: #FAF9F7;
+  --muted: #9B9496;
+  --accent: #C53030;
+  --line: rgba(34, 31, 32, 0.12);
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'DM Sans', -apple-system, sans-serif;
+  background: var(--warm-white);
+  color: var(--charcoal);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px clamp(20px, 4vw, 80px);
+  background: rgba(250, 249, 247, 0.88);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+  font-size: 0.8125rem;
+}
+
+.topbar a {
+  color: var(--charcoal);
+  text-decoration: none;
+}
+
+.topbar a:hover { color: var(--accent); }
+
+.hero {
+  padding: clamp(72px, 12vw, 150px) clamp(20px, 4vw, 80px) clamp(48px, 8vw, 96px);
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.title {
+  max-width: 980px;
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(3.25rem, 11vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  font-weight: 800;
+}
+
+.subtitle {
+  max-width: 680px;
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  line-height: 1.55;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.pill {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) 1fr;
+  gap: clamp(32px, 6vw, 88px);
+  padding: clamp(44px, 7vw, 90px) clamp(20px, 4vw, 80px);
+}
+
+.toc {
+  align-self: start;
+  position: sticky;
+  top: 82px;
+}
+
+.toc h2,
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+}
+
+.toc ol {
+  list-style: decimal-leading-zero;
+  list-style-position: inside;
+  color: var(--muted);
+}
+
+.toc li {
+  margin-bottom: 10px;
+}
+
+.toc a {
+  color: var(--charcoal);
+  text-decoration: none;
+}
+
+.toc a:hover { color: var(--accent); }
+
+.summary {
+  padding-bottom: 36px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid var(--line);
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.summary-item {
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.summary-label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.summary-value {
+  line-height: 1.55;
+}
+
+.track {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: clamp(16px, 3vw, 34px);
+  padding: clamp(28px, 5vw, 52px) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.track-num {
+  color: var(--muted);
+  font-family: 'Syne', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.track-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.6rem, 4vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+}
+
+.track-title a {
+  text-decoration: none;
+}
+
+.track-title a:hover { color: var(--accent); }
+
+.credits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(24px, 5vw, 64px);
+  row-gap: 14px;
+}
+
+.credit {
+  display: grid;
+  grid-template-columns: 116px 1fr;
+  gap: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.credit dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.credit dd {
+  line-height: 1.55;
+}
+
+.footer {
+  padding: 32px clamp(20px, 4vw, 80px);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+}
+
+.footer a {
+  color: var(--charcoal);
+  text-decoration: none;
+}
+
+.footer a:hover { color: var(--accent); }
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  .toc { position: static; }
+  .summary-grid,
+  .credits-grid { grid-template-columns: 1fr; }
+  .track { grid-template-columns: 1fr; }
+  .track-num { margin-bottom: -8px; }
+  .footer { flex-direction: column; }
+  .footer-links { flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+<nav class="topbar">
+  <a href="/">← Volver a Chau!</a>
+  <a href="https://open.spotify.com/album/5xgDA33p8W2cYK9o3SNgDA" target="_blank" rel="noopener">Escuchar el disco</a>
+</nav>
+
+<header class="hero">
+  <p class="eyebrow">Cuatro Cuartos / Cu4tro Cu4rtos</p>
+  <h1 class="title">Créditos Chau!</h1>
+  <p class="subtitle">Las voces, las guitarras, el sudor y las manos que hicieron posible las canciones del disco de despedida de Cuatro Cuartos.</p>
+  <div class="meta">
+    <span class="pill">12 canciones</span>
+    <span class="pill">Montevideo, Uruguay</span>
+    <span class="pill">Masterización & Remix: 2024</span>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="toc" aria-label="Índice de temas">
+    <h2>Temas</h2>
+    <ol>
+      <li><a href="#el-disfraz">El Disfraz</a></li>
+      <li><a href="#llave">Llave</a></li>
+      <li><a href="#no-se-que-decir">No Sé Qué Decir</a></li>
+      <li><a href="#los-lunes">Los Lunes</a></li>
+      <li><a href="#el-cancerbero">El Cancerbero</a></li>
+      <li><a href="#que-me-dices">¿Qué me dices?</a></li>
+      <li><a href="#strawberry-fields">También Hay Strawberry Fields</a></li>
+      <li><a href="#balas-en-el-bar">Balas en el Bar</a></li>
+      <li><a href="#me-da-igual">Me da Igual</a></li>
+      <li><a href="#prefiero">Prefiero</a></li>
+      <li><a href="#mano-a-mano">Mano a Mano</a></li>
+      <li><a href="#quedar-quedan">Quedar Quedan</a></li>
+    </ol>
+  </aside>
+
+  <section>
+    <section class="summary" aria-labelledby="datos-generales">
+      <h2 class="section-title" id="datos-generales">Datos generales</h2>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <span class="summary-label">Álbum</span>
+          <p class="summary-value">Chau!</p>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Artista</span>
+          <p class="summary-value">Cuatro Cuartos, Gabriel Simonet</p>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Composición general</span>
+          <p class="summary-value">Gabriel Simonet (10) & Gonzalo Angeriz (2)</p>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Producción</span>
+          <p class="summary-value">Gabriel Simonet con Max Capote, Hernán Romero, Damián Palacios y Pedro Hordeñana</p>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Guitarras generales</span>
+          <p class="summary-value">Damián Palacios, Jaime González Presto, Nico Nieto, Gonzalo Angeriz, Julio Mollá, Gabriel Simonet</p>
+        </div>
+        <div class="summary-item">
+          <span class="summary-label">Batería</span>
+          <p class="summary-value">Glenn Welman, Gonzalo Argenti</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="track" id="el-disfraz">
+      <span class="track-num">01</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/3fyXjhQil9doxBwJmBY8tj" target="_blank" rel="noopener">El Disfraz</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Feat</dt><dd>Max Capote, Hernán Romero, Damián Palacios</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Voz</dt><dd>Gabriel Simonet, Max Capote, Gonzalo Angeriz, Hernán Romero (en orden de aparición)</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Damián Palacios, Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Glenn Welman</dd></div>
+          <div class="credit"><dt>Teclas</dt><dd>Hernán Romero</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet & Hernán Romero</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="llave">
+      <span class="track-num">02</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/3kCN45lig3rqY4NgYDGxsf" target="_blank" rel="noopener">Llave</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Feat</dt><dd>Damián Palacios, Gabriel Simonet, Hernán Romero</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Voces</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Damián Palacios, Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Glenn Welman</dd></div>
+          <div class="credit"><dt>Teclados</dt><dd>Hernán Romero</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet & Max Capote</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="no-se-que-decir">
+      <span class="track-num">03</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/5enHL72ocupOAU1Tb0KyIE" target="_blank" rel="noopener">No Sé Qué Decir</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gabriel Simonet & Gonzalo Angeriz</dd></div>
+          <div class="credit"><dt>Voz</dt><dd>Gabriel Simonet, Gonzalo Angeriz</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Nico Nieto, Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Glenn Welman</dd></div>
+          <div class="credit"><dt>Teclados</dt><dd>Hernán Romero</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet, Hernán Romero</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="los-lunes">
+      <span class="track-num">04</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/3hzcVZCqVtKcbU8ydpLjAY" target="_blank" rel="noopener">Los Lunes</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Voz</dt><dd>Gonzalo Angeriz</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Gabriel Simonet, Damián Palacios</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Glenn Welman</dd></div>
+          <div class="credit"><dt>Teclados</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet, Max Capote</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="el-cancerbero">
+      <span class="track-num">05</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/1eEfraIqEpx7VjNGrlDUeB" target="_blank" rel="noopener">El Cancerbero</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Voz</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Jaime González Presto, Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Glenn Welman</dd></div>
+          <div class="credit"><dt>Teclados</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet, Max Capote</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="que-me-dices">
+      <span class="track-num">06</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/0v04BiUMLaZvtIbOKpvF0D" target="_blank" rel="noopener">¿Qué me dices?</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Damián Palacios, Gabriel Simonet, Gonzalo Miños</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Glenn Welman</dd></div>
+          <div class="credit"><dt>Teclados</dt><dd>Hernán Romero, Tribilín</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet, Hernán Romero</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="strawberry-fields">
+      <span class="track-num">07</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/4lwI1RoSz0idhq4KyrDwUB" target="_blank" rel="noopener">También Hay Strawberry Fields</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Voces</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Gabriel Simonet, Pedro Hordeñana, Damián Palacios</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Glenn Welman</dd></div>
+          <div class="credit"><dt>Teclados</dt><dd>Pedro Hordeñana</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet, Pedro Hordeñana</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="balas-en-el-bar">
+      <span class="track-num">08</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/3Q4rPIDL3nfDjBZiaD3tNS" target="_blank" rel="noopener">Balas en el Bar</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Voz</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Damián Palacios, Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Popo Romano, Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Glenn Welman</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet, Max Capote</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="me-da-igual">
+      <span class="track-num">09</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/4QWCiK11yDx2FHCPNv9BQ9" target="_blank" rel="noopener">Me da Igual</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gonzalo Angeriz</dd></div>
+          <div class="credit"><dt>Voz</dt><dd>Gonzalo Angeriz</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Gonzalo Angeriz, Julio Mollá</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Gonzalo Argenti</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet, Max Capote</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="prefiero">
+      <span class="track-num">10</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/5ZjMpABed7EVbGqF36YCNG" target="_blank" rel="noopener">Prefiero</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Voces</dt><dd>Gabriel Simonet, Julio Mollá</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Gabriel Simonet, Julio Mollá, Gonzalo Angeriz</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Gonzalo Argenti</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet, Max Capote</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="mano-a-mano">
+      <span class="track-num">11</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/7JayNnMvyI8IFV64ENDJy5" target="_blank" rel="noopener">Mano a Mano</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gonzalo Angeriz</dd></div>
+          <div class="credit"><dt>Voz</dt><dd>Gonzalo Angeriz, Gabriel Simonet, Julio Mollá</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Gonzalo Angeriz, Julio Mollá</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Gonzalo Argenti</dd></div>
+          <div class="credit"><dt>Teclados</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Piano</dt><dd>Gonzalo Argenti</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet, Max Capote</dd></div>
+        </dl>
+      </div>
+    </article>
+
+    <article class="track" id="quedar-quedan">
+      <span class="track-num">12</span>
+      <div>
+        <h2 class="track-title"><a href="https://open.spotify.com/track/2bNfdTMmiu9h1TtC4Djjg3" target="_blank" rel="noopener">Quedar Quedan</a></h2>
+        <dl class="credits-grid">
+          <div class="credit"><dt>Versión</dt><dd>Chau!</dd></div>
+          <div class="credit"><dt>Composición</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Voces</dt><dd>Gabriel Simonet, Julio Mollá</dd></div>
+          <div class="credit"><dt>Guitarras</dt><dd>Gonzalo Angeriz, Julio Mollá, Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Bajo</dt><dd>Gabriel Simonet</dd></div>
+          <div class="credit"><dt>Batería</dt><dd>Gonzalo Argenti</dd></div>
+          <div class="credit"><dt>Producción</dt><dd>Gabriel Simonet, Max Capote</dd></div>
+        </dl>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>Cuatro Cuartos — Montevideo, Uruguay</span>
+  <div class="footer-links">
+    <a href="/">Chau!</a>
+    <a href="https://open.spotify.com/album/5xgDA33p8W2cYK9o3SNgDA" target="_blank" rel="noopener">Spotify</a>
+    <a href="https://twitter.com/cuatro_cuartos" target="_blank" rel="noopener">Twitter/X</a>
+    <a href="https://www.facebook.com/cuatrocuartos.uy" target="_blank" rel="noopener">Facebook</a>
+  </div>
+</footer>
+</body>
+</html>

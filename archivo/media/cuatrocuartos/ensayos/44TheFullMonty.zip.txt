@@ -1,0 +1,9 @@
+Archivo grande excluido del repositorio Git.
+
+Nombre original: 44TheFullMonty.zip
+Tamano aproximado: 36.3 MB
+Ruta original dentro del proyecto: site/archivo/media/cuatrocuartos/ensayos/44TheFullMonty.zip
+Copia local movida a: _large-files-excluded/site/archivo/media/cuatrocuartos/ensayos/44TheFullMonty.zip
+Respaldo externo: disco de respaldo de Gabriel.
+
+Para restaurar, copiar este archivo desde el respaldo o desde _large-files-excluded/ a la ruta original.

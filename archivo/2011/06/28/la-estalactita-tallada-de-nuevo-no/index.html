@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>La estalactita tallada, de nuevo, no. — Archivo Cuatro Cuartos</title>
+<meta name="description" content="La estalactita tallada, de nuevo, no.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/archivo/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2011-06-28 / post</div>
+      <h1>La estalactita tallada, de nuevo, no.</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2011/06/28/la-estalactita-tallada-de-nuevo-no/</p>
+    </header>
+    <h2>La estalactita tallada, de nuevo, no.</h2>
+<p>A continuación, un artículo colaboración (o más bien sabotaje) de un fan. Casualmente coautor de algún tema, alguna noche que estábamos borrachos y fáciles (cuando decimos "estábamos", en realidad, hablamos de Goz).</p>
+<blockquote>## La estalactita tallada de nuevo, no.  Por: sgonzalez1976 Un hombre hace lo que un hombre debe hacer, y aunque no quiero hablar mucho acerca de mi mismo (en realidad lo único que hace un hombre al expresarse es hablar de sí mismo... piénsenlo...) creo que corresponde dar una breve pero intensa descripción de mi ausencia en este blog (o como mierda se le diga ahora en este cambiante año 2011). El 19 de noviembre de 2007 quise arrojar un poco de luz sobre la historia oculta del más polémico integrante de Cuatro Cuatros, el so-called "Goz". En esos días, envalentonado por quien sabe que brebaje, me decidí a escribir unas inocentes líneas, pensando, iluso de mí, que no habría consecuencias... Pues bien, mi artículo puede ser leído, por el informáticamente hábil lector, en algún lugar de este blog, las consecuencias que este artículo tuvo, se siguen sintiendo a lo largo del multiverso. Luego de escribir el susodicho artículo, me dispuse a escribir acerca del tema que había dejado colgado, el origen del "grillito"; recuerdo que era de noche, estaba sentado en mi silla frente a la pantalla de mi monitor CRT, a mi derecha estaba un rollo de papel higiénico a medio acabar (recuerden que era el año 2007, plena adolescencia... hagan las cuentas) cuando escuché pasos sigilosos que se dirigían hacia mi por detrás... No quiero entrar en detalles tórridos, como muchos querrían, pero este fue el comienzo de un exilio de más de 4 años... Confinado a una celda de piedra, en lo más alto de un pico ignoto en el Himalaya, fui secuestrado por fuerzas oscuras, al servicio de quien sabe qué poderoso de los medios, que claramente, no quería que la verdad saliera a la luz... Durante esos 4 años de cautiverio y como única compañía un monje tibetano que lo único que conocía del Uruguay era a Francescoli, pase por etapas de profunda depresión, hasta que, luego de un profundo proceso de introspección conquisté lo que en el mundo budista se conoce como iluminación... No quiero entrar en los detalles de mi escape, sólo basta recordar dolorosamente que involucró una práctica proctológica olvidada por los principales autores de la materia, los 8 guardias de turno, una estalactita de hielo tallada especialmente para la ocasión y otros detalles que prefiero olvidar.... Pero no nos vayamos del tema, hace pocos días escape de mi cautiverio, y si bien soy un hombre iluminado, despojado de los apegos y las emociones imperfectas que pavimentan el camino de esta aventura llamada vida... mantengo algo de mi imperfección humana... el deseo de venganza... Voy a desenmascarar todo este complot!!! Voy a averiguar quién estuvo detrás de mi abducción!!! Y por supuesto, no dejaré que las voces censoras callen a esta pluma!!! Voy a escribir el origen real del "grillito"... pero lo voy a hacer en un ratito, porque creo que escucho unos pasos sigilosos detrás de mí... NOOOOOOO La estalactita tallada de nuevo NOOOOOO!!!!</blockquote>
+<p>Quejas, comentarios y vintenes: sgonzalez1976</p>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

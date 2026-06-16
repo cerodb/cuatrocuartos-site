@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Pequeño Cu4rto e-lustrado. 1era entrega — Archivo Cuatro Cuartos</title>
+<meta name="description" content="Pequeño Cu4rto e-lustrado. 1era entrega">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/archivo/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2008-08-29 / post</div>
+      <h1>Pequeño Cu4rto e-lustrado. 1era entrega</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2008/08/29/pequeo-cu4rto-e-lustrado-1era-entrega/</p>
+    </header>
+    <h2>Pequeño Cu4rto e-lustrado. 1era entrega</h2>
+<p>Cu4tro Cu4rtos se ha convertido con el tiempo en algo que trasciende lo musical. Además de nuevas canciónes, con los años han ido surgiendo también nuevas anécdotas, palabras, frases y ocurrencias que van alimentando la "cultura" de este reducido colectivo. Y todas estas cosas surgen indefectiblemente en el seno más íntimo del grupo, en sus reuniones y ensayos, por lo que toda referencia o mención rápida a ellas fuera de ese pequeño círculo sólo conseguirá caras de "?" , y nuestro blog es un excelente ejemplo de esta realidad.</p>
+<p>Es por esto que hemos decidido poner a disposición de nuestros fans el "Pequeño Cu4rto e-lustrado", en el que pretendemos explicar mucha de la terminología que hemos adoptado como parte de nuestra cultura. Sabemos que nuestros fans quieren disfrutar de cada una de nuestras notas, acordes, palabras, gritos y artículos del blog, y por lo tanto confiamos en que esta publicación, en sus sucesivas entregas, contribuya con dicho fin. Disfrútenla, para poder así disfrutarnos mejor.</p>
+<ul><li>Mr. E.: forma cariñosa de referirnos a Pablo Díaz, talentosísimo miembro fundador de Cu4tro Cu4rtos. Exquisito cantante y compositor. Showman innato. Intransigente fan de los Beatles. Intransigente. Lirico-amnésico crónico. Hiperquinético. Retromaníaco (se podría hacer un chiste fácil en torno a esto, pero Pablo no merece tanta mezquindad). La "E" en "Mr. E." corresponde a "Ego", característica de su personalidad que se encuentra muy exaltada; él fue el artífice de la antológica frase "Señores, no somos grandes, somos inmensos". A pesar de haberse alejado de la banda por cuestiones estrictamente personales, cada tanto los visita y deleita con su presencia. Un grande.</li></ul>
+<ul><li>DOW: es la sigla para "Dirty Old Warehouse", forma en que llamamos al actual lugar de ensayo de la banda. Pero ¿ por qué "Old" si se desconoce la fecha de la construcción del recinto ? Queda lindo en la sigla y la hace pronunciable, y además porque "nosotros somos Cu4tro Cu4rtos y ustedes no" (Gab). Las otras 2 palabras que componen la sigla no precisan explicación y se ajustan completamente a la realidad. El fan se preguntará:  ¿dónde está este santuario del Brit Latino? Ahhhh.... The answer, my friend, is DOWing in the wind, the answer is DOWing in the wind. Aunque, podemos dar una engañosa pista: en el DOW, "todo rueda mejor". Buena cacería.</li></ul>
+<ul><li>Juancito o Colo: invitado vitalicio a los ensayos, actuaciones y cualquier otro evento que congregue al menos a 2 miembros de la banda. Este personaje gusta de entregarse a su destino (la extinción) desparramado sobre un puñado de frías rocas. Tipo raro, ¿no? Pero es bueno, muy bueno. Jamás le hizo ni le hará mal a nadie. Sólo es superado en sus bondades por su hermano mayor (AKA "el negro"), quien poco se deja ver.</li></ul>
+<ul><li>Crackelated: La genial frase de Chulo "Don't forget the crackelated one" quedará para siempre en el recuerdo de los miembros de la banda, como un símbolo del verdadero propósito de los ensayos. También nos proporcionó un neologismo para hacer alusión al noble blend de maltas escocesas que de tanto en tanto disfrutamos.</li></ul>
+<ul><li>Camarón Bumbay: Bue.... a ver cómo explicamos esto... digamos que: Extinto boliche de la Costa de Oro en que Cu4tro Cu4rtos logró que el infierno literalmente subiera (en forma de mierda) a la tierra. Memorable.</li></ul>
+<ul><li>Eyebrow bombing: actitud de vida y técnica de ejecución de guitarra rítmica creada y utilizada por Chulo. Soberbia, inconfundible e inimitable. Artículos enteros dedicados a su estudio han sido publicados en este mismo blog.</li></ul>
+<ul><li>Ricardo o Ricky: emblemático cancerbero del más sagrado recinto del Brit Latino. Dice la leyenda que él nunca duerme. Y puede que sea cierto, pero hemos encontrado una sencilla y terrenal explicación para eso: no lo dejan.</li></ul>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

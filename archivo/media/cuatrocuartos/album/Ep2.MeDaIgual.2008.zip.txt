@@ -1,0 +1,9 @@
+Archivo grande excluido del repositorio Git.
+
+Nombre original: Ep2.MeDaIgual.2008.zip
+Tamano aproximado: 19.4 MB
+Ruta original dentro del proyecto: site/archivo/media/cuatrocuartos/album/Ep2.MeDaIgual.2008.zip
+Copia local movida a: _large-files-excluded/site/archivo/media/cuatrocuartos/album/Ep2.MeDaIgual.2008.zip
+Respaldo externo: disco de respaldo de Gabriel.
+
+Para restaurar, copiar este archivo desde el respaldo o desde _large-files-excluded/ a la ruta original.
