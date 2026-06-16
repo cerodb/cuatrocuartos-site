@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Cuatro Cuartos apoya el movimiento en pos del Colet de Medio Litro. — Archivo Cuatro Cuartos</title>
+<meta name="description" content="Cuatro Cuartos apoya el movimiento en pos del Colet de Medio Litro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2008-11-19 / post</div>
+      <h1>Cuatro Cuartos apoya el movimiento en pos del Colet de Medio Litro.</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2008/11/19/cuatro-cuartos-apoya-el-movimiento-en-pos-del-colet-de-medio-litro/</p>
+    </header>
+    <h2>Cuatro Cuartos apoya el movimiento en pos del Colet de Medio Litro.</h2>
+<p><img src="http://photos-g.ak.fbcdn.net/photos-ak-snc1/v378/18/7/782765039/n782765039_970846_8659.jpg" alt="Colet de Medio Litro YA!" loading="lazy"> La banda lanzó la semana pasada una declaración apoyando el Movimiento en pos del Colet de Medio Litro, convirtiéndose en la primera banda de Uruguay en apoyar esta noble -y ligeramente golosa- causa. Más info sobre el movimiento: http://www.facebook.com/group.php?gid=36358506563&amp;amp;ref=mf La banda prefiere al Colet de Medio Litro con vodka y/o bizcochos, pero la idea general la acepta abiertamente. Cuatro Cuartos, nuevamente a la vanguardia de los movimientos civiles.</p>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

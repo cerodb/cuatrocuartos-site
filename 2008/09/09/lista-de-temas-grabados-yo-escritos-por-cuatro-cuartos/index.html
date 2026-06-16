@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Lista de Temas grabados y/o escritos por Cuatro Cuartos — Archivo Cuatro Cuartos</title>
+<meta name="description" content="Lista de Temas grabados y/o escritos por Cuatro Cuartos">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2008-09-09 / post</div>
+      <h1>Lista de Temas grabados y/o escritos por Cuatro Cuartos</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2008/09/09/lista-de-temas-grabados-yo-escritos-por-cuatro-cuartos/</p>
+    </header>
+    <h2>Lista de Temas grabados y/o escritos por Cuatro Cuartos</h2>
+<p>Estos son algunos temas que han quedado registrados o están en proceso de quedarlo. <a href="/1996/09/09/a-rodar-la-vida/">1996\. A rodar la vida - Cover (Pre 4/4)</a> <a href="/1996/09/09/down-and-down/">1996\. Down and Down - Tema (Pre 4/4) - (De León / Simonet)</a> <a href="/1996/09/09/summer-of-69/">1996\. Summer of 69 - Cover (Pre 4/4)</a> <a href="/1997/09/09/hound-dog/">1997\. Hound dog - Cover 4/4 </a> <a href="/1997/09/09/pretty-woman/">1997\. Pretty Woman - Cover 4/4 </a> <a href="/1997/09/09/si-falta-tu-amor/">1997\. Si falta tu amor - Cover 4/4 </a> 1999\. Todo sigue igual - Tema 4/4 - (Simonet) <a href="/1999/12/12/nadie-tiene-a-nadie/">1999\. Nadie tiene a Nadie - Tema 4/4 - (Mollá)</a> <a href="/1999/12/12/no-estas/">1999\. No estás - Tema 4/4 - (Angeriz)</a> 1999\. Soulman (Nunca Más) - Tema 4/4 - (Díaz) 2000\. Desde que te fuiste (Ha pasado mucho tiempo) - Tema 4/4 - (Angeriz / Margenat / Mollá / Simonet) 2000\. On the way to the Countrytown - Tema 4/4 - (Mollá) 2001\. Be Bop a Lula - Cover 2001\. Born to be Wild - Cover <a href="/2005/09/09/back-in-the-ussr/">2005\. Back in The USSR - Cover</a> <a href="/2005/09/09/running-down-a-dream/">2005\. Running Down a Dream - Cover</a> <a href="/2005/09/09/im-down/">2005\. I'm Down - Cover</a> <a href="/2005/09/09/traveling-band/">2005\. Traveling Band - Cover</a> 2006\. Mano a Mano - Tema 4/4 - (Angeriz / Santiago ??) | Grabando (Octubre 2008) <a href="/2007/10/23/me-da-igual/">2006\. Me da Igual - Tema 4/4 - (Angeriz)</a> <a href="https://cuatrocuartos.com/">2006\. Mejor Natural - Tema 4/4 - (Angeriz)</a> | Grabando (Octubre 2008) 2006\. El Grillito - Tema 4/4 - (Angeriz / Santiago ??) <a href="/2008/07/27/pienso-nuevamente/">2006\. Pienso Nuevamente - Tema 4/4 - (Angeriz)</a> <a href="/2008/06/25/cop-girl-blues/">2006\. Cop Girl Blues / Whisky (no hay más) </a>\- Tema 4/4- (Simonet) 2007\. No sé qué decir - Tema 4/4 - (Angeriz / Simonet) 2007\. Quedar Quedan - Tema 4/4 - (Simonet) | Grabando (Octubre 2008) <a href="/2008/03/23/hoy-voy-a-salir/">2007\. Hoy voy a Salir - Tema 4/4</a> \- (Mollá / Simonet) 2007\. Qué me dices - Tema 4/4 - (Simonet) Los Temas se pueden descargar, son una expresión artística sin ningún fin de lucro y pertenecen a los respectivos autores.</p>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Narguilas en Uruguay — Archivo Cuatro Cuartos</title>
+<meta name="description" content="Narguilas en Uruguay">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2007-10-03 / post</div>
+      <h1>Narguilas en Uruguay</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2007/10/03/narguilas-en-uruguay/</p>
+    </header>
+    <h2>Narguilas en Uruguay</h2>
+<p>Bueno, bueno, bueno... Qué tenemos aquí?  Directamente de Oriente a la comodidad del hogar. Sí. Del Hogar. Su hogar. Tu hogar. Mi hogar. Acá en este lado del charco. Río de la plata. No, el otro lado! Uruguay, decimos. Sí. De oriente a Uruguay. Mande su email YA! ;) Hablando en serio... ahora de una manera más o menos sencilla (gracias Internet, te AMAMOS) se pueden disfrutar las más deliciosas hojas de tabaco aromatizadas, con todo el kick que una narguila cargada con alcohol y un par de miles de años de tradición pueden darte al bajo precio del tengo-que-tener-una!!</p>
+<p>Junior Modern Hookahalwaha200.gifjuniorgold.gifpegasos.gif</p>
+<p>Además también traen el carbón y los tabacos aromatizados! La pasta base ya fue. Pasó la crisis: Ahora es hora de Narguilas!</p>
+<p>Antes de que pregunten... la respuesta es sí. No funciona solamente con tabaco.</p>
+<p>Por si la redacción no es suficientemente clara Wiki nos cuenta que "En la península arábiga, en la antigua Mesopotamia (actual Iraq), durante los gobiernos del los califas, el uso del Narguile se hizo muy extensivo para el consumo de opio, resultando altamente adictivo pero extrañamente inofensivo para la salud, dado que el filtro acuoso permitía la eliminación de las toxinas." Pero eso hay que verlo... Es Wiki no la Enciclopedia Galáctica. No nos lo creemos así de buenas a primeras. Quién quiere sacarse la duda?  (Cuatro Cuartos no apoya ni alienta el consumo de drogas, estupefacientes, televisión, cine, teatro, novelas, computadoras, Internet, alcohol, tabaco, opio, chocolate, café, té, mate, sexo o culquier otro estimulante -juntos, separados o en cualquier combinación u orden posible- que altere el así estipulado correcto, normal y sano funcionamiento del organismo humano de manera predecible o impredecible, aunque se reserva el derecho de no actuar de acuerdo a sus principios morales básicos en la medida que la situación y el contexto pueda llegar a ameritarlo, sin detrimento del valor conceptual teórico que su marco ético plantea hipotéticamente como conceptos de alta racionalidad y -más o menos- probada certeza a mediano y largo plazo como pautas interesantes para tomar en cuenta en aquellos casos y sujetos que pretendan maximizar la duración y calidad de su "so-called" vida) </p>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

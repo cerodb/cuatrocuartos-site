@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>Unplugged - Toma 2 en Vivo (2011) — Archivo Cuatro Cuartos</title>
+<meta name="description" content="Unplugged - Toma 2 en Vivo (2011)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2011-07-28 / post</div>
+      <h1>Unplugged - Toma 2 en Vivo (2011)</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2011/07/28/unplugged-toma-2-en-vivo/</p>
+    </header>
+    <h2>Unplugged - Toma 2 en Vivo (2011)</h2>
+<p><a href="https://cuatrocuartos.com/"><img src="/media/uploads/2011/05/Cover-TOMA2ENVIVO-240x240.png" alt="Cuatro Cuartos - TOMA 2 EN VIVO" loading="lazy"></a>   El <a href="https://cuatrocuartos.com/">Unplugged - Toma 2 En Vi~~n~~ vo,</a> es un set de temas tocado en vivo y grabados @Dow. Con todo lo bueno y lo malo de los temas en "vivo". Como dicen en Inglés, "What you see is what you get". No hay más instrumentos de los que podemos tocar en vivo y no hay regrabaciones. Solamente la mejor mezcla que podemos hacer en nuestros equipos y algo de paciencia.     El set total incluye</p>
+<ul><li>The Devil's and The Deep Blue Sea (Harold Arlen - Ted Koehler)</li><li>Prefiero (Cuatro Cuartos)</li><li>Country Town (Cuatro Cuartos)</li><li>Mano a Mano (Cuatro Cuartos)</li><li>Running on Faith (Jerry Lynn Williams)</li><li>Angel's Dream (Tom Petty)</li><li>Walls (Tom Petty)</li><li>Let it Bleed (Rolling Stones)</li><li>Hoy Voy a Salir (Cuatro Cuartos)</li><li>San Francisco Bay Blues (<a href="http://www.youtube.com/watch?v=uBME_J0pf3o">Jesse Fuller</a>)</li><li>Medley: If not for You / What's so funny about peace, love and understanding (George Harrison / Nick Lowe)</li></ul>
+<p>Por ahora sólo se mezclaron y están disponibles para descargar (hasta que los abogados de los autores lo prohiban):</p>
+<ul><li><a href="https://cuatrocuartos.com/">El Camino (The Way)</a>, traducción por Cuatro Cuartos del tema Original de esa increíble banda que es <a href="http://www.fastballtheband.com/">Fastball</a> y</li><li><a href="https://cuatrocuartos.com/">Running On Faith</a>, el fantástico tema de ya fallecido Jerry Lynn Williams popularizado por Eric Clapton en su Unplugged.</li></ul>
+<p>More to come.</p>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>

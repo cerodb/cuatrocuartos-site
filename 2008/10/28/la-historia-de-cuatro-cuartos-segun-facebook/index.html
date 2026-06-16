@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NN04MZH9HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-NN04MZH9HE");
+</script>
+<!-- Music platform exit tracking -->
+<script>
+  (function () {
+    var platformMatchers = [
+      { name: "spotify", pattern: /(^|\.)open\.spotify\.com$/ },
+      { name: "apple_music", pattern: /(^|\.)music\.apple\.com$/ },
+      { name: "youtube_music", pattern: /(^|\.)music\.youtube\.com$/ },
+      { name: "deezer", pattern: /(^|\.)deezer\.com$/ },
+      { name: "tidal", pattern: /(^|\.)tidal\.com$/ },
+      { name: "feature_fm", pattern: /(^|\.)ffm\.to$/ }
+    ];
+
+    function platformFor(url) {
+      try {
+        var host = new URL(url, window.location.href).hostname.replace(/^www\./, "");
+        var match = platformMatchers.find(function (item) { return item.pattern.test(host); });
+        return match ? match.name : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var link = event.target.closest ? event.target.closest("a[href]") : null;
+      if (!link) return;
+
+      var platform = platformFor(link.href);
+      if (!platform || typeof window.gtag !== "function") return;
+
+      window.gtag("event", "music_platform_click", {
+        platform: platform,
+        link_url: link.href,
+        link_text: (link.textContent || "").trim().slice(0, 120),
+        page_location: window.location.href,
+        transport_type: "beacon"
+      });
+    });
+  })();
+</script>
+<title>La Historia de Cuatro Cuartos, Según Facebook — Archivo Cuatro Cuartos</title>
+<meta name="description" content="La Historia de Cuatro Cuartos, Según Facebook">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:opsz,wght@9..40,300;400;500;650;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/archive.css">
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="/archivo/">Cuatro Cuartos</a>
+    <nav class="nav">
+      <a href="/archivo/">Archivo</a>
+      <a href="https://cuatrocuartos.com/">Chau!</a>
+      <a href="https://open.spotify.com/intl-es/artist/2afoXYN0RY5wWIJCSydf2v">Spotify</a>
+    </nav>
+  </header>
+  
+<main class="content">
+  <article>
+    <header class="content-header">
+      <div class="date">2008-10-28 / post</div>
+      <h1>La Historia de Cuatro Cuartos, Según Facebook</h1>
+      <p class="source">URL vieja: http://www.cuatrocuartos.com/2008/10/28/la-historia-de-cuatro-cuartos-segun-facebook/</p>
+    </header>
+    <h2>La Historia de Cuatro Cuartos, Según Facebook</h2>
+<p>Más de 10 años de trayectoria hacia ninguna parte respaldan esta banda de rock uruguayo que comenzó haciéndole el amor a temas de los Beatles y terminó creando una nueva categoría musical (porque no los dejaban entrar en ninguna otra). Cuatro Cuartos (UY) nació en 1997, de la mano de unos estudiantes universitarios demasiado perezosos como para jugar fútbol 5 y llegó al anonimato meteóricamente, tocando covers en alocadas fiestas de fin de año para alguna universidad que prefiere permanecer en el anonimato. Hacia 1999 estaban formados por Pablo Díaz Rigby (La voz en traje), Gonzalo Angeriz (The Goz, en guitarra), Julio Mollá (en voz angelical y guitarras), Federico Paz en batería y Gabriel Simonet (gab, en bajo y otros ruidos). Ese año deciden internarse en un estudio y grabar su primer compilación de temas originales, que formaron el disco "Última Función" (un pequeño EP de cuatro temas) mezclado por Federico Lima y publicado en el 2000 por MP3.com. Toda la banda y ex integrantes están hoy de acuerdo en que "Última Función" fue un pésimo nombre -lapidario- para un álbum debut. Por otro lado, y si bien el disco no llegó lejos -principalmente por la habitual falta de pro-actividad autobombeadora que tanto caracterizaba a la banda- sí logró darle acceso a distintos boliches y antros de mala muerte en los que todos los integrantes supieron ganarse un par de doctorados en catación de brebajes de alto octanaje. En algún momento entre el 2000 y el 2004 -es difícil saberlo por la bruma alcohólica- la banda perdió tres bateristas (Federico Paz, Diego Martínez Brianza y Martín... ehmm... uno fenomenal que tocaba con Radko en Amarcord), perdió asimismo a la voz en Traje (Pablo) y -también cierto- un WahWah y la vergüenza. Para compensar la falta de ritnmo, Gonzalo Argenti se unió a Cuatro Cuartos en algún momento en esos años y desde entonces la banda se vende barata y siempre tiene las baterías puestas. Las voces ahora son provistas por los autores de los temas, lo que ha llegado a formar parta del inconfundible sonido de esta agrupación. "Última función" sería un ancla letal y parecía que se iba a convertir en el último álbum de la banda, pero sobre mediados de 2007 Cuatro Cuartos recobra el ímpetu que había dejado en una casa de empeño a cambio de dinero para comprar equipos de audio -para su sala de ensayos- y comienza a grabar lo que se convertiría en su segundo EP: "Me da igual", grabado y mezclado por ellos mismos (lo que explica muchas cosas). "<a href="/2008/07/30/me-da-igual-ep2-2008/">Me da igual</a>", recibe su título por una canción de The Goz, y es una gran frase que se ha convertido en la muletilla que la banda grita a su público mientras esquiva botellas, guías y prendas de ropa interior masculina en sus presentaciones en vivo. "Me da igual" puede descargarse de <a href="/2008/07/30/me-da-igual-ep2-2008/">www.rockontherocks.com</a> y es un ejemplo vivo del estilo que caracteriza a la banda que ha dado nombre a su propia categoría musical, el "Brit Latino". Actualmente están mezclando su tercer EP (les gusta sacar temas de a cuatro) y pasan su tiempo libre haciendo spam con información de la banda a páginas webs y programas de radio.</p>
+<ul><li>Ver página de <a href="https://www.facebook.com/cuatrocuartos.uy">Cuatro Cuartos</a> en Facebook</li><li>Descarga los <a href="https://cuatrocuartos.com/">discos de Cuatro Cuartos</a></li></ul>
+  </article>
+</main>
+
+  <footer class="footer">
+    <span>Archivo histórico — Cuatro Cuartos</span>
+    <span>Links de audio viejos apuntan a Spotify o Chau! cuando corresponde.</span>
+  </footer>
+</div>
+</body>
+</html>
