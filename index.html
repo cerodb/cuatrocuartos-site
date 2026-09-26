@@ -974,13 +974,54 @@ body {
   .archive-action { justify-self: start; }
   .footer { flex-direction: column; gap: 12px; text-align: center; }
 }
+.story-music-link { margin-top: 28px; font-size: 1rem; line-height: 1.5; }
+.story-music-link a, .hero-overline a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 5px; text-decoration-thickness: 1px; }
+.story-music-link a { font-weight: 500; }
+.story-music-link a:hover, .hero-overline a:hover { color: var(--accent); }
+.footer { gap: 24px; flex-wrap: wrap; }
+.footer > div { flex-wrap: wrap; row-gap: 12px !important; }
+.catalog-compact { padding: 52px clamp(20px,4vw,80px); max-width: 1280px; margin: 0 auto; }
+.catalog-compact h2, .music-next h2 { font: 700 clamp(1.8rem,3vw,2.6rem)/1.12 'Syne',sans-serif; letter-spacing: -.035em; margin: 0 0 24px; }
+.catalog-columns { display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; }
+.catalog-group h3 { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin: 0 0 14px; }
+.catalog-records { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 22px; }
+.catalog-record { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--charcoal); min-width: 0; }
+.catalog-record img { width: 58px; height: 58px; object-fit: cover; border-radius: 3px; flex-shrink: 0; }
+.catalog-record strong { display: block; font-size: .91rem; font-weight: 500; line-height: 1.35; }
+.catalog-record small { display: block; margin-top: 3px; color: var(--muted); font-size: .72rem; }
+.catalog-record:hover strong, .catalog-single:hover { color: var(--accent); }
+.catalog-singles { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+.catalog-single { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(34,31,32,.12); text-decoration: none; color: var(--charcoal); font-size: .88rem; line-height: 1.45; }
+.catalog-single span:last-child { color: var(--accent); }
+.music-next { background: var(--cream); padding: 46px clamp(20px,4vw,80px); }
+.music-next-inner { max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: 180px 1fr; gap: 38px; align-items: center; }
+.music-next-cover img { display: block; width: 180px; height: 180px; object-fit: cover; border-radius: 4px; }
+.music-next .story-label { margin-bottom: 10px; }
+.music-next h2 { margin-bottom: 12px; }
+.music-next p:not(.story-label) { max-width: 700px; line-height: 1.65; font-weight: 300; font-size: 1.05rem; }
+.music-next-links { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 20px; }
+.music-next-links a { color: var(--charcoal); font-size: .9rem; text-underline-offset: 5px; text-decoration-color: var(--accent); }
+.music-next-links a:hover { color: var(--accent); }
+@media(max-width:800px) { .catalog-columns { grid-template-columns: 1fr; gap: 28px; } }
+@media(max-width:600px) {
+  .footer > div { justify-content: center; }
+  .catalog-compact { padding-top: 36px; padding-bottom: 36px; }
+  .catalog-records { gap: 18px 14px; }
+  .catalog-record { gap: 8px; }
+  .catalog-record img { width: 46px; height: 46px; }
+  .catalog-record strong { font-size: .85rem; }
+  .catalog-singles { gap: 0 18px; }
+  .music-next-inner { grid-template-columns: 1fr; gap: 22px; }
+  .music-next-cover img { width: 128px; height: 128px; }
+  .music-next-links { flex-direction: column; gap: 18px; }
+}
 </style>
 </head>
 <body>
 
 <!-- HERO -->
 <section class="hero">
-  <p class="hero-overline">Cuatro Cuartos, despedida by Gabriel Simonet</p>
+  <p class="hero-overline">Cuatro Cuartos, despedida by <a href="https://simonet.com.uy/gabriel/musica/index.html">Gabriel Simonet</a></p>
   <h1 class="hero-title">Chau<span>!</span></h1>
   <p class="hero-subtitle">27 años de rock en español. Un toque Brit, un toque californiano, un toque uruguayo. El disco de despedida.</p>
   <a href="https://gabrielsimonet.ffm.to/chau" target="_blank" rel="noopener" class="hero-cta">
@@ -994,7 +1035,7 @@ body {
 </section>
 
 <!-- STORY -->
-<section class="story reveal">
+<section class="story reveal" id="historia">
   <p class="story-label">La historia</p>
   <p class="story-text">
     <strong><a href="https://www.linkedin.com/pulse/decir-chau-es-f%C3%A1cil-gabriel-simonet-rht2f" target="_blank" rel="noopener">Decir "Chau!" no es fácil.</a></strong> Después de casi tres décadas de riffs, canciones y momentos compartidos con amigos y familia, este disco cierra un capítulo enorme. Cuatro Cuartos nunca fue masivo, fue claustrofóbico... pero con estribillos. Décadas de rock entre amigos, sin demasiadas preocupaciones ni objetivos claros, salvo seguir cantando canciones juntos.
@@ -1003,6 +1044,7 @@ body {
   <p class="story-text">
     <em>Chau!</em> es despedida y celebración al mismo tiempo. Cuatro años de trabajo desde 2020, con Goz (como siempre, la fe), sumando a Max Capote, Hernán Romero y Damián Palacios para darle forma al último disco de rock de la banda. Doce canciones: dos tercios material nuevo, un tercio remixes y remasters de nuestros clásicos, con los Cuartos clásicos: Angeriz, Argenti, Mollá y Simonet. Un adiós que suena a lo que fuimos y a lo que podíamos ser.
   </p>
+  <p class="story-music-link"><a href="https://gabrielsimonet.ffm.to/chau">Escuchá Chau! <span aria-hidden="true">→</span></a></p>
 </section>
 
 <!-- MARQUEE -->
@@ -1196,47 +1238,6 @@ body {
   </div>
 </section>
 
-<!-- RELEASES -->
-<section class="releases reveal">
-  <div class="releases-header">
-    <h2 class="releases-title">También escuchá</h2>
-    <p class="releases-sub">Singles, EPs y canciones que fueron marcando el camino hasta <em>Chau!</em>.</p>
-  </div>
-
-  <div class="release-feature">
-    <div>
-      <p class="release-kicker">Un muy esperado tercer EP</p>
-      <a class="release-name" href="https://open.spotify.com/album/6cm42m4UMtYq6UpS26VTVk" target="_blank" rel="noopener">Balas en el Bar</a>
-      <p class="release-desc">Cuatro canciones del tramo final, con parte del sonido y la energía que después terminan de cerrar en <em>Chau!</em>.</p>
-    </div>
-    <a class="release-action" href="https://open.spotify.com/album/6cm42m4UMtYq6UpS26VTVk" target="_blank" rel="noopener">Escuchar EP</a>
-  </div>
-
-  <div class="release-groups">
-    <div class="release-group">
-      <h3 class="release-group-title">Singles</h3>
-      <div class="release-list">
-        <a class="release-row" href="https://open.spotify.com/album/1SVeuC1T8KDOfhRaYbYDWo" target="_blank" rel="noopener"><span>El Disfraz</span><span>Sencillo</span></a>
-        <a class="release-row" href="https://open.spotify.com/album/1dlvvhBrfKwAvpmNBRcd8G" target="_blank" rel="noopener"><span>No Sé Qué Decir</span><span>Sencillo</span></a>
-        <a class="release-row" href="https://open.spotify.com/album/0gP9M5Co4fB9vh0Jf9OZkH" target="_blank" rel="noopener"><span>El Cancerbero</span><span>Sencillo</span></a>
-        <a class="release-row" href="https://open.spotify.com/album/31emrUvnCBsaL1UO9xmKeh" target="_blank" rel="noopener"><span>Llave</span><span>Sencillo</span></a>
-        <a class="release-row" href="https://open.spotify.com/album/54iLe3HMSNRXqe6EJzUWX5" target="_blank" rel="noopener"><span>También Hay Strawberry Fields</span><span>Sencillo</span></a>
-        <a class="release-row" href="https://open.spotify.com/album/1yuguGU13dKFnYSJZ7V1Zv" target="_blank" rel="noopener"><span>Los Lunes</span><span>Sencillo</span></a>
-      </div>
-    </div>
-
-    <div class="release-group">
-      <h3 class="release-group-title">EPs</h3>
-      <div class="release-list">
-        <a class="release-row" href="https://open.spotify.com/album/6cm42m4UMtYq6UpS26VTVk" target="_blank" rel="noopener"><span>Balas en el Bar</span><span>EP</span></a>
-        <a class="release-row" href="https://open.spotify.com/album/7kCWHH25gnPwmqWSfDMu3j" target="_blank" rel="noopener"><span>Quedar Quedan</span><span>EP</span></a>
-        <a class="release-row" href="https://open.spotify.com/album/2mac8ame92jSEjk7Hf3KRB" target="_blank" rel="noopener"><span>Me da Igual</span><span>EP</span></a>
-        <a class="release-row" href="/2008/07/27/descargar-la-ltima-funcin-de-cuatro/index.html"><span>Última Función</span><span>EP Prohibido</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ARCHIVE -->
 <section class="archive-callout reveal">
   <div class="archive-inner">
@@ -1298,6 +1299,24 @@ body {
     Masterización & Remix: 2024
   </p>
   <a class="credits-link" href="creditos-chau/index.html">Ver créditos por tema</a>
+</section>
+
+<section class="catalog-compact" id="discografia" aria-labelledby="catalog-title">
+  <h2 id="catalog-title">Discos y simples de Cuatro Cuartos</h2>
+  <div class="catalog-columns">
+    <div class="catalog-group"><h3>Los discos anteriores</h3><div class="catalog-records"><a class="catalog-record" href="https://open.spotify.com/album/6cm42m4UMtYq6UpS26VTVk"><img src="/assets/music/balas-en-el-bar.jpg" alt="" width="58" height="58" loading="lazy"><span><strong>Balas en el Bar</strong><small>EP4</small></span></a><a class="catalog-record" href="https://open.spotify.com/album/7kCWHH25gnPwmqWSfDMu3j"><img src="/assets/music/quedar-quedan.jpg" alt="" width="58" height="58" loading="lazy"><span><strong>Quedar Quedan</strong><small>EP3</small></span></a><a class="catalog-record" href="https://open.spotify.com/album/2mac8ame92jSEjk7Hf3KRB"><img src="/assets/music/me-da-igual.jpg" alt="" width="58" height="58" loading="lazy"><span><strong>Me Da Igual</strong><small>EP2</small></span></a><a class="catalog-record" href="/2008/07/27/descargar-la-ltima-funcin-de-cuatro/index.html"><img src="/assets/music/ultima-funcion.jpg" alt="" width="58" height="58" loading="lazy"><span><strong>Última Función</strong><small>El EP Prohibido</small></span></a></div></div>
+    <div class="catalog-group"><h3>Los simples</h3><div class="catalog-singles"><a class="catalog-single" href="https://open.spotify.com/album/0gP9M5Co4fB9vh0Jf9OZkH"><span>El Cancerbero</span><span aria-hidden="true">↗</span></a><a class="catalog-single" href="https://open.spotify.com/album/54iLe3HMSNRXqe6EJzUWX5"><span>También Hay Strawberry Fields</span><span aria-hidden="true">↗</span></a><a class="catalog-single" href="https://open.spotify.com/album/31emrUvnCBsaL1UO9xmKeh"><span>Llave</span><span aria-hidden="true">↗</span></a><a class="catalog-single" href="https://open.spotify.com/album/1SVeuC1T8KDOfhRaYbYDWo"><span>El Disfraz</span><span aria-hidden="true">↗</span></a><a class="catalog-single" href="https://open.spotify.com/album/1dlvvhBrfKwAvpmNBRcd8G"><span>No Sé Qué Decir</span><span aria-hidden="true">↗</span></a><a class="catalog-single" href="https://open.spotify.com/album/1yuguGU13dKFnYSJZ7V1Zv"><span>Los Lunes</span><span aria-hidden="true">↗</span></a></div></div>
+  </div>
+</section>
+<section class="music-next" id="la-musica-sigue" aria-labelledby="music-next-title">
+  <div class="music-next-inner">
+    <a class="music-next-cover" href="https://simonet.com.uy/gabriel/musica/vere-que-pasa/index.html"><img src="/assets/music/vere-que-pasa-cover.webp" alt="Carátula provisional de Veré qué pasa" width="180" height="180" loading="lazy"></a>
+    <div><p class="story-label">Gabriel Simonet · Próximamente</p>
+      <h2 id="music-next-title">La música sigue acá</h2>
+      <p>Después de la despedida de Cuatro Cuartos, se viene <em>Veré qué pasa</em>, el nuevo EP de Gabriel Simonet: cinco canciones de distintas épocas, algunas nuevas y otras que esperaron años.</p>
+      <div class="music-next-links"><a href="https://simonet.com.uy/gabriel/musica/index.html">Más música de Gabriel Simonet →</a><a href="https://simonet.com.uy/gabriel/musica/vere-que-pasa/index.html">Conocé Veré qué pasa →</a></div>
+    </div>
+  </div>
 </section>
 
 <!-- FOOTER -->
