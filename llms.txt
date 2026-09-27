@@ -1,22 +1,18 @@
-# Cuatro Cuartos / Chau!
+# Cuatro Cuartos
 
-Cuatro Cuartos fue una banda uruguaya de rock entre amigos. Este sitio tiene a Chau! como disco de despedida y conserva un archivo historico curado de materiales viejos de la banda.
+> Banda uruguaya de rock. Este sitio presenta Chau!, su disco de despedida, y conserva su archivo histórico.
 
-## Paginas principales
+## Música y créditos
 
-- https://cuatrocuartos.com/ — home de Chau!, con links al album, singles, EPs, archivo y creditos.
-- https://cuatrocuartos.com/creditos-chau/ — creditos por tema del disco Chau!.
-- https://cuatrocuartos.com/archivo/ — indice curatorial del archivo historico reconstruido desde PM07.
-- https://cuatrocuartos.com/contacto/ y https://cuatrocuartos.com/YYYY/MM/DD/slug/ — paginas historicas preservadas en sus URLs originales.
+- [Chau! y discografía](https://cuatrocuartos.com/): disco de despedida, discos anteriores y simples, con enlaces de escucha.
+- [Créditos de Chau!](https://cuatrocuartos.com/creditos-chau/): participantes y créditos por canción.
+- [Música de Gabriel Simonet](https://simonet.com.uy/gabriel/musica/index.html): música del artista y continuidad de su trabajo después de Cuatro Cuartos.
+- [Veré qué pasa](https://simonet.com.uy/gabriel/musica/vere-que-pasa/index.html): información del próximo EP de Gabriel Simonet. Consultar esta página para el estado del lanzamiento.
 
-## Linkeo musical
+## Archivo histórico
 
-- Cuando se menciona una cancion concreta, el sitio intenta enlazar al track de Spotify.
-- Cuando se menciona un EP o album como release, el sitio enlaza al release de Spotify.
-- Si un material viejo no tiene destino musical claro, debe apuntar a la home o quedar marcado para decision editorial.
+- [Archivo de Cuatro Cuartos](https://cuatrocuartos.com/archivo/): índice de publicaciones históricas con enlaces a sus URLs originales.
 
-## Marca
+Las fechas del archivo corresponden a las publicaciones históricas, no a su recuperación. La participación en una grabación no implica pertenencia a la banda ni autoría de todas sus canciones. Consultar los créditos de cada obra; no atribuir automáticamente todos los textos del archivo a Gabriel Simonet.
 
-- Nombre principal: Cuatro Cuartos.
-- Alias ocasional: Cu4tro Cu4rtos.
-- Uso contextual: Cuatro Cuartos (UY).
+Cuatro Cuartos, Cu4tro Cu4rtos y Cuatro Cuartos (UY) son variantes del nombre de la banda. Gabriel Simonet es una persona y artista, no otro nombre de la banda.
