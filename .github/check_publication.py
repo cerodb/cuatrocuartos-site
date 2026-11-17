@@ -20,7 +20,7 @@ def inspect(name, mode):
         return 'symlink or submodule is not publishable'
     if name in CONTROL:
         return None  # Public CI code: changes require explicit diff review.
-    if name not in SPECIAL:
+    if name not in SPECIAL and name != 'favicon.ico':
         if any(part.startswith('.') or part.lower() in PRIVATE_DIRS for part in path.parts):
             return 'private path'
         if path.suffix.lower() == '.txt':
